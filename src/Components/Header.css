@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #f5efdf;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: burlywood;
+    width: 40%;
+    height: 50%;
+    margin-right: 5rem;
+}
+
+ul {
+    height: 100%;
+    background-color: rgb(115, 125, 126);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li {
+    background-color: chocolate;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
