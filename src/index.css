@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   flex-wrap: wrap;
+  /* pointer-events: none;
+  cursor: none; */
 }
 
 body {
