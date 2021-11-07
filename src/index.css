@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 body {
   height: 100vh;
   width: 100%;
   background-color: #f5efdf;
+  /* background: rgb(177, 185, 161); */
 }
