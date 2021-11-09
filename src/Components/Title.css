@@ -32,9 +32,7 @@
     font-size: 130px;
     font-weight: 20px;
     color:#333;
-    opacity: 0;
-    /* transform: translateY(40px);
-    animation: apparition 0.9s 1.4s ease-out forwards; */
+    /* opacity: 0; */
 }
 
 .line-1 {
@@ -43,9 +41,7 @@
     background: #333;
     margin-right: 10rem;
     margin-top: 1.1rem;
-    opacity: 0;
-    /* transform: translateY(40px);
-    animation: fadeIn 1s 3s ease-out forwards; */
+    /* opacity: 0; */
 }
 
 .web-dev {
@@ -60,18 +56,14 @@
 .web-dev > p {
     font-size: 130px;
     color:#333;    
-    opacity: 0;
-    /* transform: translateY(40px);
-    animation: apparition 1.2s 1.1s ease-out forwards; */
+    /* opacity: 0; */
 }
 .line-2 {
     border: 1px solid #333;
     width: 45%;
     height: 1px;
     background: #333;
-    opacity: 0;
-    /* transform: translateY(40px);
-    animation: fadeIn 0.5s 2.1s ease-out forwards; */
+    /* opacity: 0; */
 }
 
 .front-end {
@@ -84,23 +76,17 @@
     align-items: center;
 }
 .front-end > p {
-    /* height: 80%; */
     font-size: 130px;
     color:#333;   
-    opacity: 0;
+    /* opacity: 0; */
     margin-left: 13rem;
-    /* transform: translateY(40px);
-    animation: apparition 0.9s 0.8s ease-out forwards; */
 }
 .line-3 {
-    /* margin-top: 1rem; */
     margin-right: 12rem;
     width: 80%; 
     height: 1px;
     background: #333;
-    opacity: 0;
-    /* transform: translateY(30px); 
-    animation: fadeIn 0.5s 1.s ease-out forwards;  */
+    /* opacity: 0; */
 }   
 
 
@@ -130,28 +116,4 @@
 .react-js > p {
     font-size: 130px;
     color:#333;
-    /* transform: rotate(50deg) translateY(40px);
-    opacity: 0;
-    animation: apparition 0.9s 1.7s ease-out forwards; */
 }
-
-
-/*****  KEYFRAMES  *****/
-
-/* @keyframes apparition {
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        width: 0%;
-        opacity: 0;
-    }
-    to {
-        width: 45%;
-        opacity: 1;
-    }
-} */

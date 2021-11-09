@@ -1,132 +1,81 @@
 import React, { useRef, useEffect } from 'react';
 import '../Components/Title.css'
-import { gsap } from 'gsap';
+// import gsap from 'gsap';
 // import { TweenLite } from 'gsap/TweenLite';
 
 
-const Title = () => {
+const Title = ({timeline}) => {
 
-    const yassineTitle = useRef(null)
-    const webdevTitle = useRef(null)
-    const frontendTitle = useRef(null)
-    const reactTitle = useRef(null)
-    const line1 = useRef(null)
-    const line2 = useRef(null)
-    const line3 = useRef(null)
+    let yassineTitle = useRef(null)
+    let webdevTitle = useRef(null)
+    let frontendTitle = useRef(null)
+    let reactTitle = useRef(null)
+    let line1 = useRef(null)
+    let line2 = useRef(null)
+    let line3 = useRef(null)
 
-    useEffect(() => {
-        gsap.from(yassineTitle.current, {
+    useEffect (() => {
+        timeline.from(yassineTitle, {
+            delay: 0.15,
+            duration: 0.5,
             opacity: 0,
-            y: 80,
-    }
-    )
-        gsap.to(yassineTitle.current, {
-                opacity: 1,
-                duration: 3,
-                y: 0,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(webdevTitle.current, {
-            opacity: 0,
-            y: 80,
-    }
-    )
-        gsap.to(webdevTitle.current, {
-                opacity: 1,
-                duration: 2,
-                y: 0,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(frontendTitle.current, {
-            opacity: 0,
-            y: 80,
-    }
-    )
-        gsap.to(frontendTitle.current, {
-                opacity: 1,
-                duration: 1,
-                y: 0,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(reactTitle.current, {
-            opacity: 0,
-            y: -100,
-            rotate: 60,
-    }
-    )
-        gsap.to(reactTitle.current, {
-                opacity: 1,
-                duration: 4,
-                y: 0,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(line1.current, {
+            y: 50,
+        })
+        timeline.from(line1, {
+            // delay:,
+            duration: 0.7,
             opacity: 0,
             width: 0,
-    }
-    )
-        gsap.to(line1.current, {
-                opacity: 1,
-                duration: 2,
-                width: 350,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(line2.current, {
+            // y: 80,
+        })
+        timeline.from(webdevTitle, {
+            delay: 0.10,
+            duration: 0.5,
             opacity: 0,
-            width: 0,
-    }
-    )
-        gsap.to(line2.current, {
-                opacity: 1,
-                duration: 2,
-                width: 500,
-        }
-        )
-    }, [])
-
-    useEffect(() => {
-        gsap.from(line3.current, {
+            y: 50,
+        })
+        timeline.from(reactTitle, {
+            // delay: 0.20,
+            duration: 0.5,
             opacity: 0,
+            y: 50,
+        })
+        timeline.from(line2, {
+            // delay: 0.01,
+            duration: 0.8,
+            // opacity: 0,
             width: 0,
-    }
-    )
-        gsap.to(line3.current, {
-                opacity: 1,
-                duration: 2,
-                width: 350,
-        }
-        )
-    }, [])
+            // y: 80,
+        })
+        timeline.from(frontendTitle, {
+            delay: 0.10,
+            duration: 0.5,
+            opacity: 0,
+            y: 50,
+        })
+        timeline.from(line3, {
+            // delay: 0.01,
+            duration: 0.8,
+            // opacity: 0,
+            width: 0,
+            // y: 80,
+        })
+    })
 
     return (
         <main className="main-left">
             <section className="left-side">
             <div className="yassine">
-                <p ref={yassineTitle}>Yassine</p>
-                <div ref={line1} className="line-1"></div>
+                <p ref={el => yassineTitle = el}>Yassine</p>
+                <div ref={el => line1 = el} className="line-1"></div>
             </div>
             <div className="web-dev">
-                <p ref={webdevTitle}>Web-dev</p>
-                <div ref={line2} className="line-2"></div>
+                <p ref={el => webdevTitle = el}>Web-dev</p>
+                <div ref={el => line2 = el} className="line-2"></div>
             </div>
             <div className="front-end">
-                <p ref={frontendTitle}>Front-end</p>
-                <div ref={line3} className="line-3"></div>
+                <p ref={el => frontendTitle = el}>Front-end</p>
+                <div ref={el => line3 = el} className="line-3"></div>
             </div>
             </section>
 
@@ -134,7 +83,7 @@ const Title = () => {
 
             <section className="right-side">
                 <div className="react-js">
-                    <p ref={reactTitle}>React.js</p>
+                    <p ref={el => reactTitle = el}>React.js</p>
                 </div>
             </section>
         </main>
