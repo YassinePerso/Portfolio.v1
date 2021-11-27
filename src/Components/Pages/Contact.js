@@ -1,10 +1,15 @@
 import React from 'react';
+import NavBar from '../Header/NavBar';
+import KeepTouch from '../Body/KeepTouch';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
     return (
-        <div>
-            <p>contact</p>
-        </div>
+        <>
+        <NavBar />
+        <KeepTouch />
+        <Footer />
+        </>
     )
 }
 

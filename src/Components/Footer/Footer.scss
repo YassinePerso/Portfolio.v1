@@ -1,0 +1,31 @@
+
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #f5efdf;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "1" "2";
+    font-family: 'Poiret One', cursive, sans-serif;
+}
+
+.localisation {
+    grid-area: "2";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.localisation > p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer-network {
+    grid-area: "1";
+}
+
+
+
+

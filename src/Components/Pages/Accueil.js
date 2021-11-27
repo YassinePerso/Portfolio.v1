@@ -1,13 +1,15 @@
 import React from 'react';
-// import Header from '../Header'
-// import Title from '../Title'
-// import Footer from '../Footer'
+import NavBar from '../Header/NavBar'
+import Footer from '../Footer/Footer'
+import Title from '../Body/Title';
 
 const Accueil = () => {
     return (
-        <div>
-        <p>Accueil</p>
-        </div>
+        <>
+        <NavBar />
+        <Title />
+        <Footer />
+        </>
     )
 }
 
