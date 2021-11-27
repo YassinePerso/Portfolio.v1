@@ -1,34 +1,28 @@
 import React from 'react';
-import './App.css';
+import '../src/_settings.scss';
+import { gsap } from 'gsap';
+import { Timeline } from 'gsap/gsap-core';
 
-import Header from '../src/Components/Header';
-// import Title from '../src/Components/Title'
-import Footer from '../src/Components/Footer'
+// import Footer from './Components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 import Accueil from '../src/Components/Pages/Accueil';
 import QuiSuisJe from '../src/Components/Pages/QuiSuisJe';
 import Projets from '../src/Components/Pages/Projets';
 import Contact from '../src/Components/Pages/Contact';
 
-import gsap from 'gsap';
-import Title from './Components/Title';
-
 
 function App() {
 
-  let timeline = gsap.timeline()
+  let timeline = gsap.Timeline
 
   return (
-    <div className="App">
-      <Header timeline={timeline} />
-      <Title timeline={timeline} />
+    <div className="App" timeline={Timeline}>
         <Routes>
-          <Route exact path="/" component={Accueil}  />
-          <Route path="/QuiSuisJe" component={QuiSuisJe}  />
-          <Route path="/Projets" component={Projets}  />
-          <Route path="/Contact" component={Contact}  />
+          <Route exact path="/" element={<Accueil/>} Timeline={timeline} />
+          <Route path="/QuiSuisJe" element={<QuiSuisJe/>}  />
+          <Route path="/Projets" element={<Projets/>}  />
+          <Route path="/Contact" element={<Contact/>}  />
         </Routes>
-      <Footer timeline={timeline} />
     </div>
   );
 }
