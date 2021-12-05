@@ -1,7 +1,7 @@
 
 
 footer {
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     background-color: #f5efdf;
     display: grid;
@@ -9,6 +9,7 @@ footer {
     grid-template-rows: 1fr;
     grid-template-areas: "1" "2";
     font-family: 'Poiret One', cursive, sans-serif;
+    overflow-y:hidden;
 }
 
 .localisation {
@@ -16,6 +17,8 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transform: translateY(100px);
+    animation: footerApparition 1.2s 1.5s ease-out forwards;
 }
 .localisation > p {
     font-size: 30px;
@@ -25,6 +28,13 @@ footer {
 .footer-network {
     grid-area: "1";
 }
+
+@keyframes footerApparition {
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
 
 
 
