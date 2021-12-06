@@ -13,21 +13,21 @@ const TransitionHome = ({timeline}) => {
 
     useEffect(() => {
         timeline.to(trans.current, {
-            duration: 0.5,
+            duration: 1.3,
             x: 2000,
-        },);
+        },"-=1.2");
         timeline.to(trans1.current, {
-            duration: 0.5,
+            duration: 1.3,
             x: -2000,
-        },);
+        },"-=1.2");
         timeline.to(trans2.current, {
-            duration: 0.5,
+            duration: 1.3,
             x: 2000,
-        },);
+        },"-=1.2");
         timeline.to(trans3.current, {
-            duration: 0.5,
+            duration: 1.3,
             x: -2000,
-        },);
+        },"-=1.2");
         
     })
     return (
