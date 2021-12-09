@@ -1,20 +1,21 @@
 import React from 'react';
-import TransitionHome from '../Transition/TransitionHome';
-import gsap from 'gsap';
 
 import NavBar from '../Header/NavBar'
-import Footer from '../Footer/Footer'
 import Title from '../Body/Title';
+import Footer from '../Footer/Footer'
+import gsap from "gsap";
+
 
 const Accueil = () => {
 
-    const home = gsap.timeline();
+
+    let timeline = gsap.timeline();
+
     return (
         <>
-        <TransitionHome timeline={home}/>
-        <NavBar />
-        <Title />
-        <Footer />
+        <NavBar timeline={timeline} />
+        <Title  timeline={timeline} />
+        <Footer timeline={timeline} />
         </>
     )
 }

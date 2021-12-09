@@ -12,19 +12,19 @@ const Header = () => {
                     <img src={logo} width="60" height="60" alt="logo" />
                 </div>
                 <ul className="links">
-                    <li>
+                    <li className="nav-item">
                         <Link to="/">Accueil</Link>
                     </li>               
-                    <li>
+                    <li className="nav-item">
                         <Link to="/QuiSuisJe">Qui suis-je ?</Link>
                     </li>  
-                    <li>
+                    <li className="nav-item">
                         <Link to="/Projets">Projets</Link>
                     </li>  
                 </ul>
                 <section className="contact-link">
                     <li>
-                        <Link to="/Contact">Contact</Link>
+                        <Link to="/Contact" className="contact-item">Contact</Link>
                     </li>  
                 </section>
 
