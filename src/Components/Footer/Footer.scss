@@ -15,7 +15,7 @@ footer {
 .localisation {
     grid-area: "2";
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     transform: translateY(100px);
     animation: footerApparition 0.7s 6.5s ease-out forwards;

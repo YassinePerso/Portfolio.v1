@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../Body/Title.scss";
 import { Power3 } from 'gsap';
+import maphoto from '../Pictures/maphoto.jpg'
 
 const Title = ({timeline}) => {
 
@@ -90,7 +91,7 @@ const Title = ({timeline}) => {
 
       {/* MIDDLE */}
       <section className="middle">
-        <div className="haut">
+        <div className="haut-middle">
           <div class="blocks">
             <div class="block-1 block" ref={el => blockOne = el}>Y</div>
             <div class="block-2 block" ref={el => blockTwo = el}>A</div>
@@ -99,6 +100,15 @@ const Title = ({timeline}) => {
             <div class="block-5 block" ref={el => blockFifth = el}>I</div>
             <div class="block-6 block" ref={el => blockSixth = el}>N</div>
             <div class="block-7 block" ref={el => blockSeventh = el}>E</div>
+          </div>
+          <div className="text-middle">
+            <span>Developpeur</span>
+          </div>
+        </div>
+        <div className="bas-middle">
+          <div className="image-middle">
+            <img src={maphoto} alt="photo de profil" className="image"/>
+            <div className="overlay"></div>
           </div>
         </div>
 
