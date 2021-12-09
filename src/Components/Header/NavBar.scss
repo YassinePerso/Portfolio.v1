@@ -26,14 +26,18 @@ nav {
     overflow: hidden;
 }
 
+/*** LOGO ***/
 
 .logo {
   grid-area: "1";
   width: 100%;
   @include flex-center();
-  animation: headerApparition 0.5s .7s ease-out forwards;
+  animation: headerApparition 0.7s 4.8s ease-out forwards;
   transform: translateY(100px);
 }
+
+
+/*** </li> ***/
 
 .links {
     height: 100%;
@@ -41,18 +45,18 @@ nav {
     @include flex-center();
     grid-area: "2";
 }
-.links > li:nth-child(1) {
-  animation: headerApparition 0.7s .7s ease-out forwards;
+.links > .nav-item:nth-child(1) {
+  animation: headerApparition 0.7s 4.9s  ease-out forwards;
   transform: translateY(150px);
 }
-.links > li:nth-child(2) {
+.links > .nav-item:nth-child(2) {
   margin-left: 3rem;
-  animation: headerApparition 0.9s .7s ease-out forwards;
+  animation: headerApparition 0.7s 5s ease-out forwards;
   transform: translateY(150px);
 }
-.links > li:nth-child(3) {
+.links > .nav-item:nth-child(3) {
   margin-left: 3rem;
-  animation: headerApparition 1.1s .7s ease-out forwards;
+  animation: headerApparition 0.7s 5.1s ease-out forwards;
   transform: translateY(150px);
 }
 
@@ -61,15 +65,27 @@ nav {
 .contact-link {
   grid-area: "3";
   @include flex-center();
-  animation: headerApparition 1.3s .7s ease-out forwards;
+  animation: headerApparition 0.7s 5.2s ease-out forwards;
   transform: translateY(100px);
+}
+.contact-link > li {
+  list-style-type: none;
+}
+.contact-item {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
 }
 
 
               /************ <li> PARAMS </li> **********/
 
-
-li {
+.nav-item {
     text-align: none;
     font-size: 17px;
     font-weight: bold;
@@ -81,7 +97,7 @@ li {
     transition: .6s;
 }
   
-  li:before, li:after {
+.nav-item:before, li:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -91,33 +107,33 @@ li {
     background: #333;
   }
   
-  li:before {
+  .nav-item:before {
     left: -2.5px;
   }
-  li:after {
+  .nav-item:after {
     right: 2.5px;
     background: #333;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   
-  li:hover:before {
+  .nav-item:hover:before {
     background: #333;
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   
-  li:hover:after {
+  .nav-item:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
   }
   
-  li:hover {
+  .nav-item:hover {
     font-weight: bold;
   }
 
 
-  li > a {
+  .nav-item > a {
     text-decoration: none;
     font-size: 15px;
     color: #333;

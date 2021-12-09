@@ -11,11 +11,12 @@ import Cursor from './Components/Cursor/Cursor';
 
 function App() {
 
+
   return (
     <div className="App">
       <Cursor />
         <Routes>
-          <Route exact path="/" element={<Accueil/>}  />
+          <Route exact path="/" element={<Accueil/>}/>
           <Route path="/QuiSuisJe" element={<QuiSuisJe/>}  />
           <Route path="/Projets" element={<Projets/>}  />
           <Route path="/Contact" element={<Contact/>}  />
