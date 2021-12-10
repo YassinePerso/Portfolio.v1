@@ -12,21 +12,22 @@ footer {
     overflow-y:hidden;
 }
 
-.localisation {
-    grid-area: "2";
+.footer-network {
+    grid-area: "1";
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(100px);
     animation: footerApparition 0.7s 6.5s ease-out forwards;
+    // background-color: chartreuse;
 }
-.localisation > p {
+.footer-network > p {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
-.footer-network {
-    grid-area: "1";
+.localisation {
+    grid-area: "2";
 }
 
 @keyframes footerApparition {

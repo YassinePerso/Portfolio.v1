@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "../Body/Title.scss";
+import "../homepage/Title.scss";
 import { Power3 } from 'gsap';
-import maphoto from '../Pictures/maphoto.jpg'
-
+import avatar from '../../Pictures/avatar-portfolio-V2.png';
 const Title = ({timeline}) => {
 
 
@@ -81,12 +80,52 @@ const Title = ({timeline}) => {
       scale: "0.3",
       ease: Power3.easeOut
     }, "-=2");
+    ///////////// AVATAR ///////////
+    timeline.from(".image", {
+      opacity: 0,
+      skewX: 20,
+    });
+    ///-------  Text Apparition -------///
+    timeline.from(".bas-1-left p ", {
+            y: 100,
+            opacity: 0,
+            skewX: 10,
+            stagger: {
+              amount: .8
+          },
+    }, "-=1.2");
+    timeline.from(".text-middle > span", {
+        y: 100,
+        opacity: 0,
+        skewX: 10,
+        stagger: {
+          amount: 1.3,
+    },
+}, "-=1");
+    timeline.from(".bas-1-right > p", {
+        y: 100,
+        opacity: 0,
+        skewX: 10,
+        stagger: {
+          amount: .8
+},
+}, "-=.8");
   });
   
   
   return (
     <main className="container-title">
       <section className="leftSideTitle">
+        <div className="haut-left"></div>
+        <div className="bas-left">
+          <div className="bas-1-left">
+            <p>F</p>
+            <p>R</p>
+            <p>O</p>
+            <p>N</p>
+            <p>T</p>
+          </div>
+        </div>
       </section>
 
       {/* MIDDLE */}
@@ -102,20 +141,41 @@ const Title = ({timeline}) => {
             <div class="block-7 block" ref={el => blockSeventh = el}>E</div>
           </div>
           <div className="text-middle">
-            <span>Developpeur</span>
+            <span>D</span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+            <span>L</span>
+            <span>O</span>
+            <span>P</span>
+            <span>P</span>
+            <span>E</span>
+            <span>U</span>
+            <span>R</span>
           </div>
         </div>
         <div className="bas-middle">
           <div className="image-middle">
-            <img src={maphoto} alt="photo de profil" className="image"/>
-            <div className="overlay"></div>
+            <img src={avatar} alt="photo de profil" className="image" height="420" width="200" />
           </div>
         </div>
 
       </section>
 
         {/* RIGHT */}
-      <section className="rightSideTitle"></section>
+      <section className="rightSideTitle">
+      <div className="haut-right"></div>
+        <div className="bas-right">
+          <div className="bas-1-right">
+            <p>E</p>
+            <p>N</p>
+            <p>D</p>
+          </div>
+          <div className="bas-2-right">
+
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
