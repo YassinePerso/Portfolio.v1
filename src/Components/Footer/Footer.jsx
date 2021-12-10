@@ -6,12 +6,10 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-network">
-                
-            </div>
-            <div className="localisation">
                 <img src={localisation} alt="" />
                 <p>Paris</p>
             </div>
+            <div className="localisation"></div>
         </footer>
     )
 }

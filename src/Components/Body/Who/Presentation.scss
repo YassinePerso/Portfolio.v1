@@ -1,0 +1,65 @@
+
+@mixin midFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentation {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 1fr;
+    // background: rgb(143, 171, 223);
+    grid-template-areas: "1" "2";
+}
+
+      /****** LEFT SIDE *******/
+    .image-presentation {
+        @include midFlex();
+        grid-area: "1";
+        background: coral;
+
+    .image-presentation > img {
+        object-fit: cover;
+    }
+  }
+
+     /******* RIGHT SIDE ******/
+    .text-presentation {
+        grid-area: "2";
+        background: cyan;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .text-pres-container {
+            background: darkcyan;
+            height: 30%;
+            width: 100%;
+            display: flex;
+
+            .text {
+                background: cornsilk;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 18px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .text > p {
+                margin-left: 0.5rem;
+                overflow: hidden;
+            }
+            .text:nth-child(2) {
+                background: rgb(184, 172, 127);
+                display: flex;
+            }
+            .text:nth-child(3) {
+                background: rgb(126, 125, 121);
+                display: flex;
+            }
+        }
+    }
+
+

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import NavBar from '../Header/NavBar'
-import Title from '../Body/Title';
+import Title from '../Body/homepage/Title';
 import Footer from '../Footer/Footer'
 import gsap from "gsap";
 
