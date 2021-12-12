@@ -12,7 +12,8 @@
 header {
     width: 100%;
     height: 9vh;
-    background-color: #f5efdf;
+    // background-color: #f5efdf;
+    background-color: #f8f8f8;
     font-family: 'Poiret One', cursive, sans-serif;
 }
 
@@ -32,7 +33,7 @@ nav {
   grid-area: "1";
   width: 100%;
   @include flex-center();
-  animation: headerApparition 0.7s 4.8s ease-out forwards;
+  animation: headerApparition 0.7s 4s ease-out forwards;
   transform: translateY(100px);
 }
 
@@ -46,17 +47,17 @@ nav {
     grid-area: "2";
 }
 .links > .nav-item:nth-child(1) {
-  animation: headerApparition 0.7s 4.9s  ease-out forwards;
+  animation: headerApparition 0.7s 4.1s  ease-out forwards;
   transform: translateY(150px);
 }
 .links > .nav-item:nth-child(2) {
   margin-left: 3rem;
-  animation: headerApparition 0.7s 5s ease-out forwards;
+  animation: headerApparition 0.7s 4.2s ease-out forwards;
   transform: translateY(150px);
 }
 .links > .nav-item:nth-child(3) {
   margin-left: 3rem;
-  animation: headerApparition 0.7s 5.1s ease-out forwards;
+  animation: headerApparition 0.7s 4.3s ease-out forwards;
   transform: translateY(150px);
 }
 
@@ -65,7 +66,7 @@ nav {
 .contact-link {
   grid-area: "3";
   @include flex-center();
-  animation: headerApparition 0.7s 5.2s ease-out forwards;
+  animation: headerApparition 0.7s 4.4s ease-out forwards;
   transform: translateY(100px);
 }
 

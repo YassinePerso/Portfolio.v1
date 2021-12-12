@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../Who/Presentation.scss'
-import portrait from '../../Pictures/maphoto.jpg';
 import flècheDroite from '../../Pictures/flèche-droite.png'
 
 const Presentation = ({timeline}) => {
@@ -11,6 +10,17 @@ const Presentation = ({timeline}) => {
 
     useEffect(() => {
         
+        
+        
+        timeline.from(".box-presentation", 1.2, {
+            y: 1200,
+            ease: "power4.out",
+            opacity: 0,
+       },)
+        .from(".box-presentation", 2, {
+            scale: 1.6,
+            ease: "power4.out",
+        },"-=1");
         timeline.from(".text > img", {
             duration: 1.4,
             y: 200,
@@ -19,10 +29,10 @@ const Presentation = ({timeline}) => {
                 amount: .4
             },
             ease: "power4.out"
-        })
+        }, "-=1")
         timeline.from(".text > p",{
             duration: 1.4,
-            y: 200,
+            y: 210,
             skewY: 30,
             stagger: {
                 amount: .4
@@ -33,12 +43,12 @@ const Presentation = ({timeline}) => {
 
 
 
-
     return (
         <section className="presentation">
+
             {/* LEFT */}
             <section className="image-presentation">
-                <img src={portrait} alt="profil" width={310} height={410} />
+                <div className="box-presentation"></div>
             </section>
 
             {/* RIGHT */}
@@ -46,15 +56,15 @@ const Presentation = ({timeline}) => {
                 <div className="text-pres-container">
                     <div className="text">
                         <img src={flècheDroite} alt="flèche" />
-                        <p>Je m'appelle Yassine Boulakhrif.</p>
+                        <p>Je m'appelle <strong>Yassine Boulakhrif.</strong></p>
                     </div>
                     <div className="text">
                         <img src={flècheDroite} alt="flèche" />
-                        <p>Je suis développeur Front-End Junior spécialisé en React.js</p>
+                        <p>Je suis <strong>développeur Front-End Junior</strong> spécialisé en React.js</p>
                     </div>
                     <div className="text">
                         <img src={flècheDroite} alt="flèche" />
-                        <p>Passionné de développement web et ayant un fort attrait pour le design et l'UX/UI.</p>
+                        <p>Passionné de développement web et ayant un fort attrait pour le design et l'<strong>UX/UI</strong>.</p>
                     </div>
                     <div className="text">
                         <img src={flècheDroite} alt="flèche" />
@@ -62,6 +72,7 @@ const Presentation = ({timeline}) => {
                     </div>
                 </div>
             </section>
+            
         </section>
     );
 };

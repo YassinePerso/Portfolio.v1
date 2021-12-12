@@ -1,0 +1,30 @@
+@mixin midFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.H1projets {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // background: chartreuse;
+    overflow: hidden;
+    height: 40vh;
+    width: 100%;
+
+    span {
+        font-size: 90px;
+        font-weight: 900;
+        // overflow: hidden;
+    }
+    span:nth-child(4) {
+        margin-left: 20px;
+    }
+
+    img {
+        // background: cyan;
+        margin-bottom: 10px;
+    }
+}

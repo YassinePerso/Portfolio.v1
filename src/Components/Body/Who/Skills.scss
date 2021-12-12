@@ -1,0 +1,41 @@
+
+@mixin midFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    // background: rgb(197, 88, 110);
+}
+
+// .h1-skills {
+//     background: cyan;
+//     width: 100%;
+//     height: 25%;
+    // display: flex;
+    // justify-content: flex-start;
+//     align-items: flex-end;
+//     font-family: 'Poppins', sans-serif;
+//     overflow: hidden;
+
+
+//          h1 {
+//              overflow: hidden;
+//             display: flex;
+//             justify-content: flex-start;
+//             align-items: flex-end;
+//             width: 40%;
+//             height: 100%;
+//             color: #333;
+//             font-size: 100px;
+//             background: darkgray;
+//         }
+
+//          img {
+//             background: darkkhaki;
+//         }
+// }
+

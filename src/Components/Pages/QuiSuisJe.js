@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../Header/NavBar'
 import gsap from 'gsap';
 import Presentation from '../Body/Who/Presentation';
+import Skills from '../Body/Who/Skills';
 
 const QuiSuisJe = () => {
 
@@ -12,6 +13,7 @@ const QuiSuisJe = () => {
         <>
             <NavBar timeline={timeline} />
             <Presentation timeline={timeline} />
+            <Skills timeline={timeline} />
         </>
     )
 }
