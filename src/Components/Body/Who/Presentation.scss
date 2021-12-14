@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 4fr 5fr;
     grid-template-rows: 1fr;
-    background: rgb(143, 171, 223);
+    background: #F8F8F8;
     grid-template-areas: "1" "2";
 }
 
@@ -24,8 +24,8 @@
                 border: 2px solid #333;
                 width: 70%;
                 height: 70%;
-                background: cornflowerblue;
-                background-image: url(../../Pictures/maphoto.jpg);
+                // background: cornflowerblue;
+                // background-image: url(../../Pictures/maphoto.jpg);
                 background-size: cover;
                 background-position: bottom;
                 background-repeat: no-repeat;

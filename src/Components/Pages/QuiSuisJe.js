@@ -3,6 +3,7 @@ import NavBar from '../Header/NavBar'
 import gsap from 'gsap';
 import Presentation from '../Body/Who/Presentation';
 import Skills from '../Body/Who/Skills';
+import TransitionWho from '../Body/Transition/TransitionWho';
 
 const QuiSuisJe = () => {
 
@@ -11,6 +12,7 @@ const QuiSuisJe = () => {
 
     return (
         <>
+            <TransitionWho timeline={timeline} />
             <NavBar timeline={timeline} />
             <Presentation timeline={timeline} />
             <Skills timeline={timeline} />
