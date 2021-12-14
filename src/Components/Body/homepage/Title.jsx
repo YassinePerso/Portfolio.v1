@@ -98,7 +98,8 @@ const Title = ({timeline}) => {
     ///////////// AVATAR ///////////
     timeline.from(".image", {
       opacity: 0,
-      skewX: 20,
+      x: 200,
+      // skewX: 20,
     });
     ///-------  Text Apparition -------///
     // timeline.from(".bas-1-left p ", {
@@ -113,31 +114,31 @@ const Title = ({timeline}) => {
 
     ///  ------------------   ANIMATION letter FRONT  ----------------------   ///
     timeline.from(F, {
-      duration: 1.5,
+      duration: 1.4,
       scale: .2,
       x: 20,
       y: 320,
     }, "-=1");
     timeline.from(R, {
-      duration: 1.5,
+      duration: 1.4,
       scale: .2,
       x: -30,
       y: 320,
     },  "-=1.3");
     timeline.from(O, {
-      duration: 1.5,
+      duration: 1.4,
       scale: .2,
       x: -90,
       y: 320,
     }, "-=1.3");
     timeline.from(N, {
-      duration: 1.5,
+      duration: 1.4,
       scale: .2,
       x: -152,
       y: 320,
     }, "-=1.3");
     timeline.from(T, {
-      duration: 1.5,
+      duration: 1.4,
       scale: .2,
       x: -207,
       y: 320,
@@ -163,19 +164,19 @@ const Title = ({timeline}) => {
 // }, "-=.8");
 
 timeline.from(E, {
-  duration: 1.5,
+  duration: 1.4,
   scale: .2,
   x: -30,
   y: 320,
 },  "-=1.3");
 timeline.from(N2, {
-  duration: 1.5,
+  duration: 1.4,
   scale: .2,
   x: -82,
   y: 320,
 },  "-=1.3");
 timeline.from(D, {
-  duration: 1.5,
+  duration: 1.4,
   scale: .2,
   x: -143,
   y: 320,
@@ -247,7 +248,7 @@ timeline.from(D, {
         </div>
         <div className="bas-middle">
           <div className="image-middle">
-            <img src={avatar} alt="photo de profil" className="image" height="420" width="200" />
+            <img src={avatar} alt="" className="image" height="420" width="200" />
           </div>
         </div>
 
@@ -265,7 +266,7 @@ timeline.from(D, {
           <div className="bas-2-right">
             <div className="bas-2-right-text">
               <span>-In love with Web Developpement-</span>
-              <span>Fan of Design and Beautiful websites</span>
+              <span>Fan of UX/UI and Beautiful websites</span>
             </div>
           </div>
         </div>
