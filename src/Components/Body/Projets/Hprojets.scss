@@ -11,9 +11,9 @@
     justify-content: flex-start;
     align-items: center;
     // background: #F8F8F8;
-    background-color: aqua;
+    // background-color: aqua;
     overflow: hidden;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     // overflow: hidden;
 
@@ -28,8 +28,7 @@
         margin-left: 20px;
     }
 
-    img {
-        background: rgb(113, 128, 128);
-        // margin-bottom: 7px;
-    }
+    // img {
+    //     object-fit: cover;
+    // }
 }

@@ -12,7 +12,7 @@ const FirstPro = () => {
                     </section>
                     <div className="time-firstpro">
                         <p><span>#HTML #CSS</span></p>
-                        <p><span>Challenge : 2 semaines - en équipe</span></p>
+                        <p><span>Challenge - 2 Weeks</span></p>
                     </div>
                 </aside>
                 <aside className='image-project-firstpro'>

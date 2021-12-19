@@ -6,18 +6,18 @@ const Hprojets = ({timeline}) => {
 
     useEffect(() => {
         timeline.from("span", {
-            duration: 1.2,
+            duration: 1.5,
             y: 200,
             opacity: 0,
             ease: "Power3.easeOut",
             stagger: {
-                amount: .4,
+                amount: 1,
             }
         });
         timeline.from("img", {
             y: 200,
             opacity: 0,
-        }, "-=.9");
+        }, "-=1.6");
     });
 
     return (
@@ -32,7 +32,7 @@ const Hprojets = ({timeline}) => {
             <span>e</span>
             <span>t</span>
             <span>s</span>
-            <img src={flècheBasDroite} alt="arrow" width={100} />
+            <img src={flècheBasDroite} alt="arrow" width={120} />
         </section>
     );
 };
