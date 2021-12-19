@@ -8,59 +8,69 @@ const TransitionWho = ({timeline}) => {
 
     useEffect(() => {
         timeline.from(".transition-who", {
+            
             duration: 1,
             top: "100%",
             ease: "Power3.easeOut",
         });
-    // });
-    timeline.from(
-        ".navbar-who > div", {
-            x: "-200",
-            opacity: 0,
+        timeline.from(".colonne-1-who", {
+            
+            duration: .9,
+            top: "100%",
             ease: "Power3.easeOut",
-        },);
-        //----------------- A EFFACER ---------------------- //
-        timeline.from(
-            ".images-who > div", {
-                // y: "300",
-                scale: 0,
-                opacity: 0,
-                ease: "Power3.easeOut",
-                stagger: {
-                    amount: .6,
-                }
-            },);
-                
-                // timeline.to(
-                    //     ".navbar > div", {
-                        //         x: "80",
-                        //         opacity: 0,
-                        //         scale: .2,
-                        //         ease: "Power3.easeOut",
-                        //     },);
-                        
-                        //----------------- A EFFACER ---------------------- //
-                        timeline.to(
-                            ".images-who > div", {
-                                scale: "0",
-                                opacity: 0,
-                                ease: "Power3.easeOut",
-                                stagger: {
-                                    amount: .5,
-                                }
-                            },);
-                            // //----------------- A EFFACER ---------------------- //
-                            timeline.to(
-                                ".navbar-who > div", {
-                                    x: "-200",
-                                    opacity: 0,
-                                    ease: "Power3.easeOut",
-                                },);
-                            timeline.to(".transition-who", {
+            delay: .3,
+        }, "-=1");
+        timeline.from(".colonne-2-who", {
+            
+            duration: .9,
+            top: "100%",
+            ease: "Power3.easeOut",
+            delay: .3,
+        }, "-=1");
+        timeline.from(".colonne-3-who", {
+            duration: .9,
+            top: "100%",
+            ease: "Power3.easeOut",
+            delay: .3,
+        }, "-=1");
+        timeline.from(".colonne-4-who", {
+            duration: .9,
+            top: "100%",
+            ease: "Power3.easeOut",
+            delay: .3,
+        }, "-=1");
+        
+                            timeline.to(".colonne-1-who", {
                                 duration: .9,
-                                top: "-100%",
+                                // left: "100%",
+                                top: "100%",
                                 ease: "Power3.easeOut",
-                            });
+                            },);
+                            timeline.to(".colonne-2-who", {
+                                duration: .9,
+                                // left: "100%",
+                                top: "100%",
+                                ease: "Power3.easeOut",
+                            },"-=1");
+                            timeline.to(".colonne-3-who", {
+                                duration: .9,
+                                // left: "100%",
+                                top: "100%",
+                                ease: "Power3.easeOut",
+                            },"-=1.1");
+                            timeline.to(".colonne-4-who", {
+                                duration: .9,
+                                // left: "100%",
+                                top: "100%",
+                                ease: "Power3.easeOut",
+                            },"-=1.2");
+            
+                            timeline.to(".transition-who", {
+                                delay: 3,
+                                duration: .9,
+                                left: "-100%",
+                                ease: "Power3.easeOut",
+                            }, "-=3");
                         });
                         
                         
@@ -69,19 +79,12 @@ const TransitionWho = ({timeline}) => {
                             <>
         <div class="transition-who">
 				
-				<div class="images-who">
-					<div class="img-who img-1" alt="photo"></div>
-					<div class="img-who img-2" alt="photo"></div>
-					<div class="img-who img-3" alt="photo"></div>
-					<div class="img-who img-4" alt="photo"></div>
-					<div class="img-who img-5" alt="photo"></div>
-				</div>
-				<div class="navbar-who">
-					<div class="site-title">Work</div>
-					<div class="site-icon">-</div>
-					<div class="site-type">Projects</div>
-				</div>
-			</div></>
+                <div className="colonne-1-who"></div>
+                <div className="colonne-2-who"></div>
+                <div className="colonne-3-who"></div>
+                <div className="colonne-4-who"></div>
+			</div>
+            </>
     );
 };
 

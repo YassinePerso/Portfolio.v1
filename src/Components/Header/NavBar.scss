@@ -41,6 +41,7 @@ nav {
 /*** </li> ***/
 
 .links {
+  font-family: 'Roboto', sans-serif;
     height: 100%;
     list-style-type: none;
     @include flex-center();
@@ -64,6 +65,7 @@ nav {
 /****** CONTACT LINK ******/
 
 .contact-link {
+  font-family: 'Roboto', sans-serif;
   grid-area: "3";
   @include flex-center();
   animation: headerApparition 0.7s 4.4s ease-out forwards;

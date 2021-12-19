@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin midFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondpro-container {
+    // background: cadetblue;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.grid-secondpro {
+    margin-right: 5%;
+    // background: chartreuse;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "1" "2";
+}
+
+.name-project-secondpro {
+    grid-area: "1";
+    // background: chocolate;
+    display: flex;
+    flex-direction: column;
+
+     .title-secondpro {
+        //  background: rgb(135, 111, 138);
+         width: 50%;
+         height: 75%;
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: column;
+
+           span:nth-child(1) {
+               font-size: 90px;
+           }
+     }
+     .time-secondpro {
+        //  background: darkgrey;
+         width: 50%;
+         height: 25%;
+         display: flex;
+         justify-content: flex-start;
+
+          span {
+              font-size: 20px;
+          }
+     }
+}
+
+.image-project-secondpro {
+    grid-area: "2";
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 20px;
+        color: white;
+    }
+}

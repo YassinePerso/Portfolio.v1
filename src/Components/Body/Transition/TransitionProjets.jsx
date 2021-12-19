@@ -8,104 +8,60 @@ const TransitionProjets = ({timeline}) => {
 
     useEffect(() => {
         timeline.from(".transition-projets", {
-            duration: .9,
+            duration: 1,
             top: "-100%",
             ease: "Power3.easeOut",
         });
 
         timeline.from(".colonne-1-projets", {
-            duration: .9,
+            duration: 1,
             top: "-100%",
             ease: "Power3.easeOut",
             delay: .3,
-        }, "-=1");
+        }, "-=1.1");
 
         timeline.from(".colonne-2-projets", {
-            duration: .9,
+            duration: 1,
             top: "-100%",
             ease: "Power3.easeOut",
             delay: .3,
-        }, "-=1");
+        }, "-=1.1");
         timeline.from(".colonne-3-projets", {
-            duration: .9,
+            duration: 1,
             top: "-100%",
             ease: "Power3.easeOut",
             delay: .3,
-        }, "-=1");
+        }, "-=1.1");
         timeline.from(".colonne-4-projets", {
             duration: 1,
             top: "-100%",
             ease: "Power3.easeOut",
             delay: .3,
-        }, "-=1");
-    // });
-    // timeline.from(
-    //     ".navbar-contact > div", {
-    //         x: "-200",
-    //         opacity: 0,
-    //         ease: "Power3.easeOut",
-    //     },);
-        //----------------- A EFFACER ---------------------- //
-        // timeline.from(
-        //     ".images-contact > div", {
-        //         // y: "300",
-        //         scale: 0,
-        //         opacity: 0,
-        //         ease: "Power3.easeOut",
-        //         stagger: {
-        //             amount: .6,
-        //         }
-        //     },);
-                
-                // timeline.to(
-                    //     ".navbar > div", {
-                        //         x: "80",
-                        //         opacity: 0,
-                        //         scale: .2,
-                        //         ease: "Power3.easeOut",
-                        //     },);
-                        
-                        //----------------- A EFFACER ---------------------- //
-                        // timeline.to(
-                        //     ".images-contact > div", {
-                        //         scale: "0",
-                        //         opacity: 0,
-                        //         ease: "Power3.easeOut",
-                        //         stagger: {
-                        //             amount: .5,
-                        //         }
-                        //     },);
-                            // //----------------- A EFFACER ---------------------- //
-                            // timeline.to(
-                            //     ".navbar-contact > div", {
-                            //         x: "-200",
-                            //         opacity: 0,
-                            //         ease: "Power3.easeOut",
-                            //     },);
+        }, "-=1.1");
                             timeline.to(".colonne-1-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.5");
+                            },"-=.6");
                             timeline.to(".colonne-2-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.5");
+                            },"-=.6");
                             timeline.to(".colonne-3-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.5");
+                            },"-=.6");
                             timeline.to(".colonne-4-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.5");
+                            },"-=.6");
 
                             timeline.to(".transition-projets", {
                                 delay: 3,

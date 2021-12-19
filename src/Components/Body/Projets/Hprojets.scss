@@ -5,18 +5,23 @@
 }
 
 .H1projets {
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
-    background: #F8F8F8;
+    align-items: center;
+    // background: #F8F8F8;
+    background-color: aqua;
     overflow: hidden;
-    height: 40vh;
+    height: 70vh;
     width: 100%;
+    // overflow: hidden;
 
     span {
-        font-size: 90px;
-        font-weight: 900;
+        // -webkit-text-fill-color: transparent;
+        // -webkit-text-stroke: 20px #333;
+        font-size: 140px;
+        // font-weight: 900;
         // overflow: hidden;
     }
     span:nth-child(4) {
@@ -24,7 +29,7 @@
     }
 
     img {
-        // background: cyan;
-        margin-bottom: 10px;
+        background: rgb(113, 128, 128);
+        // margin-bottom: 7px;
     }
 }

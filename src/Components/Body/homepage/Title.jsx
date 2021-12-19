@@ -97,52 +97,42 @@ const Title = ({timeline}) => {
 
     ///////////// AVATAR ///////////
     timeline.from(".image", {
+      duration: 2,
       opacity: 0,
-      x: 200,
+      rotate: 360,
       // skewX: 20,
     });
-    ///-------  Text Apparition -------///
-    // timeline.from(".bas-1-left p ", {
-    //         y: 100,
-    //         x: 250,
-    //         opacity: 0,
-    //         skewX: 10,
-    //         stagger: {
-    //           amount: .8
-    //       },
-    // }, "-=1.2");
-
     ///  ------------------   ANIMATION letter FRONT  ----------------------   ///
     timeline.from(F, {
-      duration: 1.4,
+      duration: 1.2,
       scale: .2,
       x: 20,
       y: 320,
     }, "-=1");
     timeline.from(R, {
-      duration: 1.4,
+      duration: 1.2,
       scale: .2,
       x: -30,
       y: 320,
     },  "-=1.3");
     timeline.from(O, {
-      duration: 1.4,
+      duration: 1.2,
       scale: .2,
       x: -90,
       y: 320,
-    }, "-=1.3");
+    }, "-=1.4");
     timeline.from(N, {
-      duration: 1.4,
+      duration: 1.2,
       scale: .2,
       x: -152,
       y: 320,
-    }, "-=1.3");
+    }, "-=1.5");
     timeline.from(T, {
-      duration: 1.4,
+      duration: 1.2,
       scale: .2,
       x: -207,
       y: 320,
-    }, "-=1.3");
+    }, "-=1.6");
     /// --- ANIMATION Developpeur --- ///
     timeline.from(".text-middle > span", {
         y: 100,
@@ -154,42 +144,24 @@ const Title = ({timeline}) => {
 }, "-=1");
     ///  ------------------   ANIMATION letter END  ----------------------   ///
 
-//     timeline.from(".bas-1-right > span", {
-//         y: 100,
-//         opacity: 0,
-//         skewX: 10,
-//         stagger: {
-//           amount: .8
-// },
-// }, "-=.8");
-
 timeline.from(E, {
   duration: 1.4,
   scale: .2,
   x: -30,
   y: 320,
-},  "-=1.3");
+},  "-=1.8");
 timeline.from(N2, {
   duration: 1.4,
   scale: .2,
   x: -82,
   y: 320,
-},  "-=1.3");
+},  "-=1.9");
 timeline.from(D, {
   duration: 1.4,
   scale: .2,
   x: -143,
   y: 320,
-},  "-=1.3");
-//       timeline.from(".bas-2-right-text", {
-//          duration: 1.4,
-//          width: 0,
-//         // skewY: 40,
-//         stagger: {
-//             amount: .4
-//     },
-//   ease: "power4.out"
-// }, "-=.8");
+},  "-=2");
     timeline.from(".bas-2-right-text > span", {
       duration: 1.4,
       y: 200,
