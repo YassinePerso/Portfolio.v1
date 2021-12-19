@@ -7,6 +7,7 @@ import Bar from '../Body/Projets/Bar';
 import FirstPro from '../Body/Projets/FirstPro';
 import SecondPro from '../Body/Projets/SecondPro';
 import ThirdPro from '../Body/Projets/ThirdPro';
+import FourthPro from '../Body/Projets/FourthPro';
 
 
 
@@ -26,6 +27,8 @@ const Projets = () => {
         <SecondPro  />
         <Bar  />
         <ThirdPro />
+        <Bar />
+        <FourthPro />
         <Bar />
         </>
     )

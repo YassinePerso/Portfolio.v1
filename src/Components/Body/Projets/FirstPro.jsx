@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Projets/FirstPro.scss'
+import firstproject from '../../Pictures/firstproject.jpg'
+
 
 const FirstPro = () => {
     return (
@@ -12,12 +14,11 @@ const FirstPro = () => {
                     </section>
                     <div className="time-firstpro">
                         <p><span>#HTML #CSS</span></p>
-                        <p><span>Challenge : 2 semaines - en équipe</span></p>
+                        <p><span>Challenge - 2 Weeks</span></p>
                     </div>
                 </aside>
                 <aside className='image-project-firstpro'>
-                    <span>DOM</span>
-                    <span>VILLAGE</span>
+                    <img src={firstproject} alt="village" />
                 </aside>
             </section>
         </section>
