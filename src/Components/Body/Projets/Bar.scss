@@ -1,0 +1,23 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar-container {
+    height: 8vh;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    margin-left: 25%;
+    height: 2px;
+    width: 65%;
+    background-color: #333;
+}

@@ -50,6 +50,7 @@
   height: 40%;
   width: 100%;
   @include midFlex();
+  // transition: 1s;
 }
 .bas-1-left > p {
   font-size: 100px;
@@ -57,6 +58,22 @@
   color: #333;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
+}
+
+.bas-1-left > p:nth-child(1):hover {
+  -webkit-text-fill-color: #333;
+}
+.bas-1-left > p:nth-child(2):hover {
+  -webkit-text-fill-color: rgb(175, 166, 31);
+}
+.bas-1-left > p:nth-child(3):hover {
+  -webkit-text-fill-color: rgb(223, 30, 30);
+}
+.bas-1-left > p:nth-child(4):hover {
+  -webkit-text-fill-color: rgb(82, 187, 40);
+}
+.bas-1-left > p:nth-child(5):hover {
+  -webkit-text-fill-color: rgb(45, 31, 168);
 }
 
 
@@ -95,6 +112,40 @@
       font-weight: 900;
       // font-family: 'Alegreya Sans SC italic', sans-serif;
       font-family: 'Poppins', sans-serif;
+    }
+    
+    .text-middle > span:nth-child(1):hover {
+      -webkit-text-fill-color: #333;
+    }
+    .text-middle > span:nth-child(2):hover {
+      -webkit-text-fill-color: rgb(170, 165, 165);
+    }
+    .text-middle > span:nth-child(3):hover {
+      -webkit-text-fill-color: #333;
+    }
+    .text-middle > span:nth-child(4):hover {
+      -webkit-text-fill-color: rgb(170, 165, 165);
+    }
+    .text-middle > span:nth-child(5):hover {
+      -webkit-text-fill-color: #333
+    }
+    .text-middle > span:nth-child(6):hover {
+      -webkit-text-fill-color: rgb(170, 165, 165);
+    }
+    .text-middle > span:nth-child(7):hover {
+      -webkit-text-fill-color: #333;
+    }
+    .text-middle > span:nth-child(8):hover {
+      -webkit-text-fill-color: rgb(170, 165, 165);
+    }
+    .text-middle > span:nth-child(9):hover {
+      -webkit-text-fill-color: #333;
+    }
+    .text-middle > span:nth-child(10):hover {
+      -webkit-text-fill-color: rgb(170, 165, 165);
+    }
+    .text-middle > span:nth-child(11):hover {
+      -webkit-text-fill-color: #333;
     }
 }
 
@@ -154,6 +205,16 @@
     color: #333;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 4px;
+  }
+
+  .bas-1-right > span:nth-child(1):hover {
+    -webkit-text-fill-color: #333;
+  }
+  .bas-1-right > span:nth-child(2):hover {
+    -webkit-text-fill-color: #333;
+  }
+  .bas-1-right > span:nth-child(3):hover {
+    -webkit-text-fill-color: #333;
   }
 }
 

@@ -6,16 +6,18 @@ const Hprojets = ({timeline}) => {
 
     useEffect(() => {
         timeline.from("span", {
+            duration: 1.2,
             y: 200,
             opacity: 0,
+            ease: "Power3.easeOut",
             stagger: {
-                amount: 1,
+                amount: .4,
             }
         });
         timeline.from("img", {
             y: 200,
             opacity: 0,
-        }, "-=.3");
+        }, "-=.9");
     });
 
     return (

@@ -39,95 +39,24 @@ const TransitionContact = ({timeline}) => {
             ease: "Power3.easeOut",
             delay: .3,
         }, "-=1");
-        // timeline.from(".colonne-5", {
-        //     duration: 1,
-        //     top: "100%",
-        //     ease: "Power3.easeOut",
-        //     delay: .3,
-        // }, "-=1");
-        // timeline.from(".colonne-6", {
-        //     duration: 1,
-        //     top: "100%",
-        //     ease: "Power3.easeOut",
-        //     delay: .3,
-        // }, "-=1");
-        // timeline.from(".colonne-7", {
-        //     duration: 1,
-        //     top: "100%",
-        //     ease: "Power3.easeOut",
-        //     delay: .3,
-        // }, "-=1");
-        // timeline.from(".colonne-8", {
-        //     duration: 1,
-        //     top: "100%",
-        //     ease: "Power3.easeOut",
-        //     delay: .3,
-        // }, "-=1");
-    // });
-    // timeline.from(
-    //     ".navbar-contact > div", {
-    //         x: "-200",
-    //         opacity: 0,
-    //         ease: "Power3.easeOut",
-    //     },);
-        //----------------- A EFFACER ---------------------- //
-        // timeline.from(
-        //     ".images-contact > div", {
-        //         // y: "300",
-        //         scale: 0,
-        //         opacity: 0,
-        //         ease: "Power3.easeOut",
-        //         stagger: {
-        //             amount: .6,
-        //         }
-        //     },);
-                
-                // timeline.to(
-                    //     ".navbar > div", {
-                        //         x: "80",
-                        //         opacity: 0,
-                        //         scale: .2,
-                        //         ease: "Power3.easeOut",
-                        //     },);
-                        
-                        //----------------- A EFFACER ---------------------- //
-                        // timeline.to(
-                        //     ".images-contact > div", {
-                        //         scale: "0",
-                        //         opacity: 0,
-                        //         ease: "Power3.easeOut",
-                        //         stagger: {
-                        //             amount: .5,
-                        //         }
-                        //     },);
-                            // //----------------- A EFFACER ---------------------- //
-                            // timeline.to(
-                            //     ".navbar-contact > div", {
-                            //         x: "-200",
-                            //         opacity: 0,
-                            //         ease: "Power3.easeOut",
-                            //     },);
+        
                             timeline.to(".colonne-1-contact", {
                                 duration: .9,
-                                // left: "100%",
                                 width: "0%",
                                 ease: "Power3.easeOut",
                             },);
                             timeline.to(".colonne-2-contact", {
                                 duration: .9,
-                                // left: "100%",
                                 width: "0%",
                                 ease: "Power3.easeOut",
                             },"-=1");
                             timeline.to(".colonne-3-contact", {
                                 duration: .9,
-                                // left: "100%",
                                 width: "0%",
                                 ease: "Power3.easeOut",
                             },"-=1.1");
                             timeline.to(".colonne-4-contact", {
                                 duration: .9,
-                                // left: "100%",
                                 width: "0%",
                                 ease: "Power3.easeOut",
                             },"-=1.2");
