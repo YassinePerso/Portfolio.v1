@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
+    pointer-events: none;
 }
 
 html, body {
     background-color: #F8F8F8;
+    scroll-behavior: smooth;
 }

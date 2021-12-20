@@ -5,30 +5,36 @@
 }
 
 .H1projets {
-    // font-family: 'Poppins', sans-serif;
     font-family: 'Sawarabi Gothic', sans-serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    // background: #F8F8F8;
-    // background-color: aqua;
     overflow: hidden;
     height: 80vh;
     width: 100%;
-    // overflow: hidden;
 
-    span {
-        // -webkit-text-fill-color: transparent;
-        // -webkit-text-stroke: 20px #333;
+    p {
+        margin: 0;
+        text-align: center;
         font-size: 140px;
-        // font-weight: 900;
-        // overflow: hidden;
-    }
-    span:nth-child(4) {
-        margin-left: 20px;
-    }
-
-    // img {
-    //     object-fit: cover;
+        overflow: hidden;
+        // line-height: 1;
+      }
+       span {
+        display: block;
+        // animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+        // background: #754646
+      }
+      
+    //   @keyframes reveal {
+    //     0% {
+    //       transform: translate(0,100%);
+    //     }
+    //     100% {
+    //       transform: translate(0,0);
+    //     }
+    //   }
+    // span:nth-child(4) {
+    //     margin-left: 45px;
     // }
 }

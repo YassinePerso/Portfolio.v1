@@ -1,0 +1,30 @@
+
+@mixin midFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contactfooter-container {
+    height: 9vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  "1" "2";
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.portfolio-version-contact {
+    grid-area: "1";
+    @include midFlex();
+    font-size: 25px;
+}
+
+.copyright-contact {
+    grid-area: "2";
+    @include midFlex();
+    font-size: 20px;
+}

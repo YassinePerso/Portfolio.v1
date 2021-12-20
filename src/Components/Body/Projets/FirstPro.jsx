@@ -13,7 +13,7 @@ const FirstPro = () => {
                         <p><span>VILLAGE</span></p>
                     </section>
                     <div className="time-firstpro">
-                        <p><span>#HTML #CSS</span></p>
+                        <p className='bold-span'><span>#HTML #CSS #JS</span></p>
                         <p><span>Challenge - 2 Weeks</span></p>
                     </div>
                 </aside>

@@ -1,18 +1,29 @@
-import React, { useRef } from 'react';
+// import React, { useEffect, useRef } from 'react';
+// import '../Cursor/Cursor.scss'
 
-const Cursor = () => {
+// const Cursor = () => {
 
-    let curseurRef = useRef();
+//    const cursorRef = useRef(null)
 
-    const mousePos = (event) => {
-        curseurRef.current.setAttribute('style', `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`)
-    }
-    return (
-        <div onMouseMove={mousePos} className="Cursor">
-            <div ref={curseurRef} className="curseur-perso"></div>
-        </div>
-    );
-};
+//    useEffect(() => {
+//        document.addEventListener('mousemove', (event) => {
+//            const { clientX, clientY } = event;
+//            const mouseX = clientX - cursorRef.current.clientWidth / 2;
+//            const mouseY = clientY - cursorRef.current.clientHeight / 2;
+//            cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+//        });
+//    }, []);
 
-export default Cursor;
+
+//     return (
+//         <>
+        
+//         <div className="cursor" ref={cursorRef}>
+
+//         </div>
+//         </>
+//     );
+// };
+
+// export default Cursor;
 

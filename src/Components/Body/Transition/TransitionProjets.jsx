@@ -43,25 +43,25 @@ const TransitionProjets = ({timeline}) => {
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.6");
+                            },"-=.5");
                             timeline.to(".colonne-2-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.6");
+                            },"-=.5");
                             timeline.to(".colonne-3-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.6");
+                            },"-=.5");
                             timeline.to(".colonne-4-projets", {
                                 duration: .8,
                                 // left: "100%",
                                 width: "-0%",
                                 ease: "Power3.easeOut",
-                            },"-=.6");
+                            },"-=.5");
 
                             timeline.to(".transition-projets", {
                                 delay: 3,
