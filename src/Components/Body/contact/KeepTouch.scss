@@ -8,45 +8,10 @@
 .container-keeptouch {
     width: 100%;
     height: 82vh;
-    background: #b13939;
+    background: #F8F8F8;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title {
-    position: relative;
-  }
-  .title span {
-    color: orangered;
-    font-size: clamp(40px, 12vw, 150px);
-    transition: 0.5s;
-    font-weight: 100;
-    will-change: transform;
-    display: inline-block;
-  }
-  
-  .s1 span {
-    transform-origin: bottom;
-  }
-  .s2 span {
-    transform-origin: top;
-    transform: translateY(100%) rotateX(-90deg);
-  }
-  .s2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .s1 span:hover:nth-child(1) {
-    transform: translateY(-100%) rotateX(-90deg);
-  }
-  .s1 span:hover:nth-child(2) {
-    transform: translateY(-100%) rotateX(-90deg);
-  }
-  .s2 span {
-    transform: translateY(0%) rotateX(0deg);
-  }
-  
 

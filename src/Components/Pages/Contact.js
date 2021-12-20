@@ -3,6 +3,7 @@ import NavBar from '../Header/NavBar';
 import KeepTouch from '../Body/contact/KeepTouch';
 import gsap from 'gsap';
 import TransitionContact from '../Body/Transition/TransitionContact';
+import ContactFooter from '../Footer/ContactFooter';
 
 const Contact = () => {
 
@@ -12,8 +13,9 @@ const Contact = () => {
     return (
         <>
         <TransitionContact timeline={timeline} />
-        <NavBar />
+        <NavBar timeline={timeline} />
         <KeepTouch />
+        <ContactFooter />
         </>
     )
 }

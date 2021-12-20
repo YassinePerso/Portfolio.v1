@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Projets/ThirdPro.scss'
+import thirdproject from '../../Pictures/thirdproject.jpg'
 
 const ThirdPro = () => {
     return (
@@ -11,12 +12,12 @@ const ThirdPro = () => {
                         <p><span>& FRIENDS</span></p>
                     </section>
                     <div className="time-thirdpro">
-                        <p><span>#HTML #CSS #JS #REACT #EXPRESS #SQL</span></p>
+                        <p className='bold-span'><span>#HTML #CSS #JS #REACT #EXPRESS #SQL</span></p>
                         <p><span>Challenge - 28H</span></p>
                     </div>
                 </aside>
                 <aside className='image-project-thirdpro'>
-                    <p><span>F&F</span></p>
+                    <img src={thirdproject} alt="festival" />
                 </aside>
             </section>
         </section>

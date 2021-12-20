@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Hprojets from '../Body/Projets/Hprojets';
 import NavBar from '../Header/NavBar'
 import gsap from 'gsap';
@@ -8,12 +8,16 @@ import FirstPro from '../Body/Projets/FirstPro';
 import SecondPro from '../Body/Projets/SecondPro';
 import ThirdPro from '../Body/Projets/ThirdPro';
 import FourthPro from '../Body/Projets/FourthPro';
+import Technos from '../Body/Projets/Technos';
+import FooterScroll from '../Footer/FooterScroll';
+
+
 
 
 
 const Projets = () => {
 
-
+    let bar = useRef(null);
     let timeline = gsap.timeline();
 
     return (
@@ -21,15 +25,17 @@ const Projets = () => {
         <TransitionProjets timeline={timeline} />
         <NavBar timeline={timeline}/>
         <Hprojets timeline={timeline}/>
-        <Bar />
+        <Technos />
+        <Bar ref={bar} />
         <FirstPro/>
-        <Bar />
-        <SecondPro  />
-        <Bar  />
+        <Bar ref={bar}/>
+        <SecondPro />
+        <Bar  ref={bar}/>
         <ThirdPro />
-        <Bar />
+        <Bar ref={bar} />
         <FourthPro />
-        <Bar />
+        <Bar ref={bar}/>
+        <FooterScroll />
         </>
     )
 }
