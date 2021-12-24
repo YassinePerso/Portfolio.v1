@@ -15,7 +15,7 @@ const QuiSuisJe = () => {
             <TransitionWho timeline={timeline} />
             <NavBar timeline={timeline} />
             <Presentation timeline={timeline} />
-            <Skills timeline={timeline} />
+            <Skills />
         </>
     )
 }

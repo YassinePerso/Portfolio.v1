@@ -10,7 +10,7 @@
 }
 
 .fourthpro-container {
-    // background: cadetblue;
+    background: cadetblue;
     height: 45vh;
     width: 100%;
     display: flex;
@@ -21,7 +21,7 @@
 
 .grid-fourthpro {
     margin-right: 5%;
-    // background: chartreuse;
+    background: chartreuse;
     width: 65%;
     height: 100%;
     @include midFlex();
@@ -29,5 +29,13 @@
 
      span {
          font-size: 80px;
+         font-size: clamp(40px, 9vw, 80px);
      }
+}
+
+////// MEDAI QUERIES /////@include
+@media screen and (max-width: 800px) {
+    .fourthpro-container {
+        @include midFlex();
+    }
 }

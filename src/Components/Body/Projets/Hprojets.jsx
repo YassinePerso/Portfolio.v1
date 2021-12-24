@@ -6,12 +6,9 @@ const Hprojets = ({timeline}) => {
 
     useEffect(() => {
         timeline.from("span", {
-            duration: 1.1,
+            duration: 1.2,
             y: 200,
             ease: "Power3.easeOut",
-            // stagger: {
-            //     amount: 1,
-            // }
         });
         timeline.from("img", {
             duration: 1,
@@ -25,7 +22,7 @@ const Hprojets = ({timeline}) => {
             <p>
                 <span>Mes Projets</span>
             </p>
-            <img src={flècheBasDroite} alt="arrow" width={120} />
+            <img src={flècheBasDroite} alt="arrow" width={110} />
         </section>
     );
 };

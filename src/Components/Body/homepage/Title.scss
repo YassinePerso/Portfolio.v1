@@ -15,6 +15,7 @@
     // background-color: #f5efdf;
     background-color: #f8f8f8;
     // background-color: #cecece;
+    font-family: 'prohibition', sans-serif;
 }
 
 /****************** LEFT SIDE ******************************/
@@ -25,7 +26,7 @@
     width: 100%;
     grid-area: "1";
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -89,7 +90,7 @@
     width: 100%;
     height: 50%;
     @include midFlex();
-    font-family: 'Poiret One', cursive, sans-serif;
+    // font-family: 'Poiret One', cursive, sans-serif;
 
     .blocks {
         display: flex;
@@ -111,7 +112,7 @@
       font-size: 100px;
       font-weight: 900;
       // font-family: 'Alegreya Sans SC italic', sans-serif;
-      font-family: 'Poppins', sans-serif;
+      // font-family: 'Poppins', sans-serif;
     }
     
     .text-middle > span:nth-child(1):hover {
@@ -201,7 +202,7 @@
    span {
     font-size: 100px;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
+    // font-family: 'Poppins', sans-serif;
     color: #333;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 4px;
@@ -219,7 +220,7 @@
 }
 
 .bas-2-right {
-  font-family: 'Alegreya Sans SC italic', sans-serif;
+  // font-family: 'Alegreya Sans SC italic', sans-serif;
   width: 100%;
   height: 60%;
   @include midFlex();
@@ -229,7 +230,7 @@
       border-radius: 10px;
       font-weight: 700;
       font-size: 20px;
-      font-family: 'Poiret One', cursive;
+      // font-family: 'Poiret One', cursive;
       height: 25%;
       width: 50%;
       @include midFlex();

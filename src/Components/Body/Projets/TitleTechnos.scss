@@ -1,0 +1,29 @@
+
+
+
+.container-title-technos {
+    // background: grey;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+
+    p {
+        margin: 0;
+        text-align: center;
+      //   font-size: 100px;
+        font-size: clamp(60px, 14vw, 100px);
+        font-weight: 800;
+        overflow: hidden;
+        // line-height: 1;
+        margin-bottom: 13rem;
+      }
+       
+         span {
+            display: block;
+            -webkit-text-stroke: 3px #333;
+            color: transparent;
+         }
+}

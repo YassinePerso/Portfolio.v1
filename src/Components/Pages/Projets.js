@@ -10,6 +10,7 @@ import ThirdPro from '../Body/Projets/ThirdPro';
 import FourthPro from '../Body/Projets/FourthPro';
 import Technos from '../Body/Projets/Technos';
 import FooterScroll from '../Footer/FooterScroll';
+import TitleTechnos from '../Body/Projets/TitleTechnos';
 
 
 
@@ -25,6 +26,7 @@ const Projets = () => {
         <TransitionProjets timeline={timeline} />
         <NavBar timeline={timeline}/>
         <Hprojets timeline={timeline}/>
+        <TitleTechnos />
         <Technos />
         <Bar ref={bar} />
         <FirstPro/>

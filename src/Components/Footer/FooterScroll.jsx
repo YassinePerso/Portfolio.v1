@@ -5,7 +5,7 @@ const FooterScroll = () => {
     return (
         <section className="footerscroll-container">
             <div className="backtotop">
-
+                {/* ADD BACKTOTOP BUTTON */}
             </div>
             <div className="portfolio-version-scroll">
                 <p><span>Portfolio.v1</span></p>

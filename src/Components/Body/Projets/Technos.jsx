@@ -1,21 +1,65 @@
-import React from 'react';
-import '../Projets/Technos.scss'
+import React from "react";
+import "../Projets/Technos.scss";
 
 const Technos = () => {
-    return (
-        <section className='technos-container'>
-            <section className="technos-title">
-                <p><span>Technos :</span></p>
-            </section>
-            <div className="html"></div>
-            <div className="css"></div>
-            <div className="javascript"></div>
-            <div className="react"></div>
-            <div className="api"></div>
-            <div className="mysql"></div>
-            <div className="express"></div>
-        </section>
-    );
+  return (
+    <section className="container-infinite-scroll">
+      <div class="scroll text1">
+        <div>
+          HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML<span>HTML - </span>HTML <span>HTML - </span> HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML<span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML <span>HTML - </span>HTML<span>HTML - </span>HTML <span>HTML - </span> HTML <span>HTML - </span>HTML <span>HTML - </span>HTML
+          <span>HTML - </span>HTML <span>HTML - </span>
+        </div>
+      </div>
+      
+      <div class="scroll text2">
+        <div>
+          CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span> CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span> CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span> CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span> CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS<span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>CSS
+          <span>CSS - </span>CSS <span>CSS - </span>CSS <span>CSS - </span>
+        </div>
+      </div>
+
+      <div class="scroll text3">
+        <div>
+          Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript
+          <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript<span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript
+          <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span> Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript
+          <span>Javascript - </span> Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript
+          <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>Javascript<span>Javascript - </span>Javascript <span>Javascript - </span>Javascript <span>Javascript - </span>
+        </div>
+      </div>
+
+      <div class="scroll text4">
+        <div>
+          API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span> API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span> API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span> API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>API<span>API - </span>API <span>API - </span>API <span>API - </span>API <span>API - </span>
+        </div>
+      </div>
+
+      <div class="scroll text5">
+        <div>
+          REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT<span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT<span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT<span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span> REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT<span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT <span>REACT - </span>REACT
+          <span>REACT - </span>REACT <span>REACT - </span>
+        </div>
+      </div>
+
+    </section>
+  );
 };
 
 export default Technos;
