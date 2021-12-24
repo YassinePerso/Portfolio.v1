@@ -5,20 +5,25 @@ import '../Who/Skills.scss'
 const Skills = ({timeline}) => {
 
     useEffect(() => {
-        timeline.from("h1", {
-            duration: .6,
-            y: 500,
-            skewY: 30,
-        })
+        // timeline.from("h1", {
+        //     duration: .6,
+        //     y: 500,
+        //     skewY: 30,
+        // })
     })
     return (
-        <section className="skills">
-            {/* <section className="h1-skills">
-                <h1>My Skills :</h1>
-                <img src={flècheBasDroite} alt="arrow" width={50} />
-            </section> */}
-            
-        </section>
+            <section className="my-skills-reel" id="skill-reel">
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+                <div className="reel-item">&nbsp; -- My skills</div>
+            </section>
     );
 };
 

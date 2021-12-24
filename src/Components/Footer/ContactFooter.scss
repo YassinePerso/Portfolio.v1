@@ -20,11 +20,13 @@
 .portfolio-version-contact {
     grid-area: "1";
     @include midFlex();
-    font-size: 25px;
+    // font-size: 25px;
+    font-size: clamp(10px, 7vw, 30px);
 }
 
 .copyright-contact {
     grid-area: "2";
     @include midFlex();
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: clamp(10px, 6vw, 25px);
 }

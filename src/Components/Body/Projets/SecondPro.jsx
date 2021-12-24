@@ -7,16 +7,18 @@ const FirstPro = () => {
         <section className='secondpro-container'>
             <section className='grid-secondpro'>
                 <aside className='name-project-secondpro'>
-                    <section className="title-secondpro" href="https://github.com/YassinePerso/DOMvillage">
-                        <p><span>NASATO</span></p>
+                    <section className="title-secondpro">
+                        <p><span><a href="https://github.com/YassinePerso/DOMvillage">NASATO</a></span></p>
                     </section>
                     <div className="time-secondpro">
                         <p className='bold-span'><span>#HTML #CSS #JS #REACT #API</span></p>
-                        <p><span>Challenge - 1 Month</span></p>
+                        <p><span className='challenge'>Challenge - 1 Month</span></p>
                     </div>
                 </aside>
                 <aside className='image-project-secondpro'>
-                    <img src={secondproject} alt="relaxation" />
+                    <a href="https://github.com/YassinePerso/paris-0921-p2-groupe4">
+                        <img src={secondproject} alt="relaxation" />
+                    </a>
                 </aside>
             </section>
         </section>

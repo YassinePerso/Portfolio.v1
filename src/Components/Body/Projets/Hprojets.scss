@@ -16,25 +16,25 @@
     p {
         margin: 0;
         text-align: center;
-        font-size: 140px;
+        font-size: clamp(55px, 10vw, 140px);
         overflow: hidden;
-        // line-height: 1;
-      }
-       span {
-        display: block;
-        // animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1s;
-        // background: #754646
       }
       
-    //   @keyframes reveal {
-    //     0% {
-    //       transform: translate(0,100%);
-    //     }
-    //     100% {
-    //       transform: translate(0,0);
-    //     }
-    //   }
-    // span:nth-child(4) {
-    //     margin-left: 45px;
-    // }
+       span {
+        display: block;
+       
+      }
+      
+    
+}
+
+@media screen and (max-width:800px) {
+  .H1projets > img {
+    width: 80px;
+  }
+}
+@media screen and (max-width:500px) {
+  .H1projets > img {
+    width: 60px;
+  }
 }
