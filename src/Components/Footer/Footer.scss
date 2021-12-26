@@ -18,8 +18,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(100px);
-    animation: footerApparition 0.7s 6.5s ease-out forwards;
+    transform: translateY(100px) rotate(70deg);
+    animation: footerApparition 1s 5.7s ease-out forwards;
     // background-color: chartreuse;
 }
 .footer-network > p {

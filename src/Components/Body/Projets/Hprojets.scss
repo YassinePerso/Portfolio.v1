@@ -5,7 +5,9 @@
 }
 
 .H1projets {
-    font-family: 'Sawarabi Gothic', sans-serif;
+  // background-color: #853c3c;
+  background-color: #F8F8F8;
+  font-family: "Ogg",'Sawarabi Gothic', sans-serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,6 +23,8 @@
       }
       
        span {
+         color: #333;
+        //  color: #F8F8F8;
         display: block;
        
       }
@@ -29,6 +33,9 @@
 }
 
 @media screen and (max-width:800px) {
+  .H1projets {
+    height: 50vh;
+  }
   .H1projets > img {
     width: 80px;
   }

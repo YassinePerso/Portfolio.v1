@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
+
+
 import Hprojets from '../Body/Projets/Hprojets';
 import NavBar from '../Header/NavBar'
 import gsap from 'gsap';
@@ -9,36 +11,34 @@ import SecondPro from '../Body/Projets/SecondPro';
 import ThirdPro from '../Body/Projets/ThirdPro';
 import FourthPro from '../Body/Projets/FourthPro';
 import Technos from '../Body/Projets/Technos';
-import FooterScroll from '../Footer/FooterScroll';
 import TitleTechnos from '../Body/Projets/TitleTechnos';
-
-
+import ContactFooter from '../Footer/ContactFooter';
 
 
 
 const Projets = () => {
 
-    let bar = useRef(null);
     let timeline = gsap.timeline();
 
+    
     return (
-        <>
+        <section className='container-projets-page'>
         <TransitionProjets timeline={timeline} />
         <NavBar timeline={timeline}/>
-        <Hprojets timeline={timeline}/>
-        <TitleTechnos />
+        <TitleTechnos/>
         <Technos />
-        <Bar ref={bar} />
+        <Hprojets/>
+        <Bar/>
         <FirstPro/>
-        <Bar ref={bar}/>
+        <Bar/>
         <SecondPro />
-        <Bar  ref={bar}/>
+        <Bar/>
         <ThirdPro />
-        <Bar ref={bar} />
+        <Bar />
         <FourthPro />
-        <Bar ref={bar}/>
-        <FooterScroll />
-        </>
+        <Bar/>
+        <ContactFooter />
+        </section>
     )
 }
 

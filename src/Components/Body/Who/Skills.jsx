@@ -12,17 +12,8 @@ const Skills = ({timeline}) => {
         // })
     })
     return (
-            <section className="my-skills-reel" id="skill-reel">
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
-                <div className="reel-item">&nbsp; -- My skills</div>
+            <section className="my-skills-reel">
+              
             </section>
     );
 };
