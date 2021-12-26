@@ -2,28 +2,42 @@
 
 
 .container-title-technos {
-    // background: grey;
+    background: #f8f8f8;
     height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: "Ogg", 'Sawarabi Gothic', sans-serif;
 
     p {
-        margin: 0;
-        text-align: center;
-      //   font-size: 100px;
         font-size: clamp(60px, 14vw, 100px);
-        font-weight: 800;
         overflow: hidden;
-        // line-height: 1;
-        margin-bottom: 13rem;
+        
       }
        
          span {
-            display: block;
-            -webkit-text-stroke: 3px #333;
-            color: transparent;
+          color: #333;
+          display: block;
+          animation: textApparition 1.5s 2.8s cubic-bezier(0.77, 0, 0.175, 1) backwards;
          }
+}
+
+
+@media screen and (max-width: 800px) {
+  .container-title-technos {
+    height: 60vh;
+  }
+}
+
+
+/////// ------  MEDIA QUERIES  ------ ////////
+
+@keyframes textApparition {
+  from {
+    transform: translateX(-830px);
+  }
+  to {
+    transform: none;
+  }
 }

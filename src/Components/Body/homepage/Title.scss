@@ -1,239 +1,212 @@
 
 @mixin midFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-title {
-    width: 100%;
-    height: 82vh;
-    display: grid;
-    grid-template-columns: 15fr 1fr 15fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "1" "2" "3";
-    // background-color: #f5efdf;
-    background-color: #f8f8f8;
-    // background-color: #cecece;
-    font-family: 'prohibition', sans-serif;
+  width: 100%;
+  height: 82vh;
+  display: grid;
+  grid-template-columns: 15fr 1fr 15fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "1" "2" "3";
+  // background-color: #f5efdf;
+  background-color: #f8f8f8;
+  // background-color: #cecece;
 }
 
 /****************** LEFT SIDE ******************************/
 
 .leftSideTitle {
-    // background-color: aqua;
-    height: 100%;
-    width: 100%;
-    grid-area: "1";
-    display: flex;
-    // font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: 
-           "1"
-           "2"
-    ;
-}
-
-.haut-left {
+  height: 100%;
+  width: 100%;
   grid-area: "1";
-  width: 100%;
-  height: 100%;
-  // background-color: bisque;
-}
-.bas-left {
-  width: 100%;
-  height: 100%;
-  grid-area: "2";
-}
-.bas-1-left {
-  height: 40%;
-  width: 100%;
-  @include midFlex();
-  // transition: 1s;
-}
-.bas-1-left > p {
-  font-size: 100px;
-  font-weight: 800;
-  color: #333;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 4px;
+  font-family: "Ogg", 'Sawarabi Gothic', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+         "1"
+         "2"
+         "3"
+         "4"
+  ;
 }
 
-.bas-1-left > p:nth-child(1):hover {
-  -webkit-text-fill-color: #333;
+.left-1 {
+// background: grey;
+grid-template-areas: "1";
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+
+ p {
+  position: absolute;
+  overflow: hidden;
+  left: 19%;
+  height: 22%;
+
+  span {
+    font-size: clamp(20px, 11vw, 140px);
+  }
+ }
+
+ .text {
+  display: block;
+  animation: textanimationX 1.2s 5.2s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+ }
 }
-.bas-1-left > p:nth-child(2):hover {
-  -webkit-text-fill-color: rgb(175, 166, 31);
+
+.left-2 {
+// background: pink;
+grid-template-areas: "2";
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+p {
+  position: absolute;
+  overflow: hidden;
+  left: 35%;
+  height: 22%;
+
+  span {
+    font-size: clamp(20px, 11vw, 140px);
+  }
+ }
+
+ .text {
+  display: block;
+  animation: textanimationX 1.2s 4.8s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+ }
+} 
+
+.left-3 {
+// background: rgb(134, 252, 66);
+grid-template-areas: "3";
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+p {
+  position: absolute;
+  overflow: hidden;
+  left: 20%;
+  height: 22%;
+
+  span {
+    font-size: clamp(20px, 11vw, 140px);
+  }
+ }
+
+ .text {
+  display: block;
+  animation: textanimationX 1.2s 4.4s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+ }
 }
-.bas-1-left > p:nth-child(3):hover {
-  -webkit-text-fill-color: rgb(223, 30, 30);
+
+.left-4 {
+// background: rgb(64, 179, 255);
+grid-template-areas: "4";
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+p {
+  position: absolute;
+  overflow: hidden;
+  left: 38%;
+  height: 22%;
+
+  span {
+    font-size: clamp(20px, 11vw, 140px);
+  }
+ }
+
+ .text {
+  display: block;
+  animation: textanimationX 1.2s 4s cubic-bezier(0.77, 0, 0.175, 1) backwards ;
+ }
 }
-.bas-1-left > p:nth-child(4):hover {
-  -webkit-text-fill-color: rgb(82, 187, 40);
+
+
+// @keyframes textanimationXmoins {
+//   0% {
+//     transform: translateY(-600px) rotate(60deg);
+//   }
+//   100% {
+//       transform: none;
+//   }
+// }
+@keyframes textanimationX {
+0% {
+  transform: translateY(600px) rotate(60deg);
 }
-.bas-1-left > p:nth-child(5):hover {
-  -webkit-text-fill-color: rgb(45, 31, 168);
+100% {
+    transform: none;
 }
+}
+
+
+
 
 
 /****************  MIDDLE  ***************/
 
 .middle {
-    grid-area: "2";
-    width: 100%;
-    height: 100%;
+  grid-area: "2";
+  width: 100%;
+  height: 100%;
+  // background-color: aquamarine;
 }
 
 .haut-middle {
-    width: 100%;
-    height: 50%;
-    @include midFlex();
-    // font-family: 'Poiret One', cursive, sans-serif;
+  width: 100%;
+  height: 50%;
+  @include midFlex();
+  font-family: 'Poiret One', cursive, sans-serif;
 
-    .blocks {
-        display: flex;
-        font-size: 140px;
-        color: #333;
-        position: absolute;
-    }
-
-    .text-middle {
-        position: absolute;
-        // z-index: 5;
-        // animation: apparition 0.6s 3s ease-out forwards;
-        // transform: translateY(100);
-    }
-    .text-middle > span {
+  .blocks {
+      display: flex;
+      font-size: 140px;
       color: #333;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 4px;
-      font-size: 100px;
-      font-weight: 900;
-      // font-family: 'Alegreya Sans SC italic', sans-serif;
-      // font-family: 'Poppins', sans-serif;
-    }
-    
-    .text-middle > span:nth-child(1):hover {
-      -webkit-text-fill-color: #333;
-    }
-    .text-middle > span:nth-child(2):hover {
-      -webkit-text-fill-color: rgb(170, 165, 165);
-    }
-    .text-middle > span:nth-child(3):hover {
-      -webkit-text-fill-color: #333;
-    }
-    .text-middle > span:nth-child(4):hover {
-      -webkit-text-fill-color: rgb(170, 165, 165);
-    }
-    .text-middle > span:nth-child(5):hover {
-      -webkit-text-fill-color: #333
-    }
-    .text-middle > span:nth-child(6):hover {
-      -webkit-text-fill-color: rgb(170, 165, 165);
-    }
-    .text-middle > span:nth-child(7):hover {
-      -webkit-text-fill-color: #333;
-    }
-    .text-middle > span:nth-child(8):hover {
-      -webkit-text-fill-color: rgb(170, 165, 165);
-    }
-    .text-middle > span:nth-child(9):hover {
-      -webkit-text-fill-color: #333;
-    }
-    .text-middle > span:nth-child(10):hover {
-      -webkit-text-fill-color: rgb(170, 165, 165);
-    }
-    .text-middle > span:nth-child(11):hover {
-      -webkit-text-fill-color: #333;
-    }
+      position: absolute;
+  }
 }
 
 
-.bas-middle {
-    width: 100%;
-    height: 50%;
+
+//////////   --- MEDIA QUERIES --- /////////
+
+@media screen and (max-width: 850px) {
+
+.container-title {
+  // background: indianred;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  @include midFlex();
+
+
+  p {
     @include midFlex();
+    width: 57%;
+  }
 
-    .image-middle {
-        position: absolute;
-    }
- }
+  .text {
+    // font-size: 60px;
+    font-size: clamp(55px, 10vw, 100px);
+  }
 
+}
 
-
-/***** RIGHT SIDE ******/
-
+/// --- DISPLAY NONE --- ///
+.middle {
+  display: none;
+}
 .rightSideTitle {
-    height: 100%;
-    width: 100%;
-    grid-area: "3" ;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: 
-           "1"
-           "2"
-    ;
+  display: none;
 }
-
-.haut-right {
-  grid-area: "1";
-  width: 100%;
-  height: 100%;
-}
-.bas-right {
-  width: 100%;
-  height: 100%;
-  grid-area: "2";
-  // background-color: turquoise;
-}
-.bas-1-right {
-  height: 40%;
-  width: 100%;
-  @include midFlex();
-
-   span {
-    font-size: 100px;
-    font-weight: 900;
-    // font-family: 'Poppins', sans-serif;
-    color: #333;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 4px;
-  }
-
-  .bas-1-right > span:nth-child(1):hover {
-    -webkit-text-fill-color: #333;
-  }
-  .bas-1-right > span:nth-child(2):hover {
-    -webkit-text-fill-color: #333;
-  }
-  .bas-1-right > span:nth-child(3):hover {
-    -webkit-text-fill-color: #333;
-  }
-}
-
-.bas-2-right {
-  // font-family: 'Alegreya Sans SC italic', sans-serif;
-  width: 100%;
-  height: 60%;
-  @include midFlex();
-  flex-direction: column;
-
-    .bas-2-right-text {
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 20px;
-      // font-family: 'Poiret One', cursive;
-      height: 25%;
-      width: 50%;
-      @include midFlex();
-      overflow: hidden;
-    }
 }

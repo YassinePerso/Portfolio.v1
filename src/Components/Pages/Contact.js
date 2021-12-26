@@ -14,8 +14,8 @@ const Contact = () => {
         <>
         <TransitionContact timeline={timeline} />
         <NavBar timeline={timeline} />
-        <KeepTouch />
-        <ContactFooter />
+        <KeepTouch timeline={timeline} />
+        <ContactFooter timeline={timeline}/>
         </>
     )
 }

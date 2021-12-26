@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "../../Body/contact/KeepTouch.scss";
 
-const KeepTouch = () => {
+const KeepTouch = ({timeline}) => {
 
 
   
   
   useEffect(() => {
+
 
     //  -----  Contactez-moi ! ----- //
     const spanContainers = document.querySelectorAll('.title div');
@@ -29,10 +30,10 @@ spanContainers.forEach(item => {
         <section className="contactez-moi">
           <h1 class="title">
             <div class="span-container s1">
-              <span>Stalk-me :</span>
+              <span className="stalk">Contact-me :</span>
             </div>
             <div class="span-container s2">
-              <span>Stalk-me :</span>
+              <span>Contact-me :</span>
             </div>
           </h1>
         </section>
@@ -49,7 +50,7 @@ spanContainers.forEach(item => {
               </div>
             </div>
 
-            <aside className="bar-contact"></aside>
+            <aside className="bar-contact1"></aside>
 
             <div className="container-contact-links-linkedin">
               <div class="span-container l1">
@@ -60,7 +61,7 @@ spanContainers.forEach(item => {
               </div>
             </div>
 
-            <aside className="bar-contact"></aside>
+            <aside className="bar-contact2"></aside>
 
             <div className="container-contact-links-gmail">
               <div class="span-container gm1">
