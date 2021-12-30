@@ -1,0 +1,38 @@
+
+.marquee-container {
+    height: 15vh;
+    width: 100%;
+    background-color: #F8F8F8;
+    // background-color: #853c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    // transform: rotateZ(10deg);
+}
+
+.marquee {
+    // justify-content: center;
+    // display: flex;
+    // align-items: center;
+    font-size: 100px;
+    line-height: 1;
+    font-family: "Ogg", sans-serif;
+    padding: 24 0px;
+    color: #F8F8F8;
+    white-space: nowrap;
+    animation: marquee 100.5s infinite linear;
+}
+.marquee::after {
+    content: "MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - MY STACK - ";
+    background-color: #333;;
+}
+
+ @keyframes marquee {
+     0% {
+         transform: translateX(0);
+     }
+     100% {
+         transform: translateX(-50%);
+     }
+ }

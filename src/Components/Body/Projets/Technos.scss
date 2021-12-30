@@ -1,14 +1,16 @@
-@mixin midFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+// @mixin midFlex {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
 
 
 .container-infinite-scroll {
+  // background-color: #333;
+  // @include midFlex();
   background-color: #F8F8F8;
-    height: 150vh;
+    height: 130vh;
     width: 100%;
     overflow: hidden;
     font-family: 'Sawarabi Gothic', sans-serif;

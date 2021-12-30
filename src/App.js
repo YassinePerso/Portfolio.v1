@@ -12,9 +12,8 @@ import Scroll from './Components/Scroll/Scroll';
 
 function App() {
 
-
-
   return (
+    // <AnimationContext.Provider value={{ setCurrentBg}}>
     <div className="App">
       {/* <Cursor /> */}
         <Scroll />
@@ -25,6 +24,7 @@ function App() {
           <Route path="/Contact" element={<Contact/>}  />
         </Routes>
     </div>
+  // </AnimationContext.Provider>
   );
 }
 

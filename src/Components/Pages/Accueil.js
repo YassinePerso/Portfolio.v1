@@ -4,7 +4,7 @@ import NavBar from '../Header/NavBar'
 import Title from '../Body/homepage/Title';
 import Footer from '../Footer/Footer'
 import gsap from "gsap";
-import TransitionHome from '../Body/Transition/TransitionHome';
+// import TransitionHome from '../Body/Transition/TransitionHome';
 
 
 const Accueil = () => {
@@ -14,7 +14,7 @@ const Accueil = () => {
 
     return (
         <>
-        <TransitionHome timeline={timeline} />
+        {/* <TransitionHome timeline={timeline} /> */}
         <NavBar timeline={timeline} />
         <Title  timeline={timeline} />
         <Footer timeline={timeline} />

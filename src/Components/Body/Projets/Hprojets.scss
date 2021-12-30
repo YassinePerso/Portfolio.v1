@@ -12,7 +12,7 @@
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
 
     p {
@@ -28,8 +28,15 @@
         display: block;
        
       }
-      
-    
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width:800px) {
@@ -45,3 +52,4 @@
     width: 60px;
   }
 }
+

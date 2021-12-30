@@ -1,78 +1,60 @@
-import React, { useEffect } from 'react';
+import React,{ useEffect } from 'react';
 import '../Who/Presentation.scss'
-import flècheDroite from '../../Pictures/flèche-droite.png'
 
 const Presentation = ({timeline}) => {
 
-
-
-
-
     useEffect(() => {
-        
-        
-        
-        timeline.from(".box-presentation", 1.2, {
-            y: 1200,
-            ease: "power4.out",
-            opacity: 0,
-       },)
-        .from(".box-presentation", 2, {
-            scale: 1.6,
-            ease: "power4.out",
-        },"-=1");
-        timeline.from(".text > img", {
-            duration: 1.4,
-            y: 200,
-            skewY: 30,
-            stagger: {
-                amount: .4
-            },
-            ease: "power4.out"
-        }, "-=1")
-        timeline.from(".text > p",{
-            duration: 1.4,
-            y: 210,
-            skewY: 30,
-            stagger: {
-                amount: .4
-            },
-            ease: "power4.out"
-        }, "-=1");
+        const aboutContainers = document.querySelectorAll('.title-about div');
+
+aboutContainers.forEach(item => {
+
+    const letters = item.children[0].textContent.split('');
+    item.innerHTML = "";
+
+    letters.forEach((el, index) => {
+        item.innerHTML += `<span style="transition-delay: ${0.06 * index}s">${el}</span>`
     })
+})
+  })
 
 
 
     return (
         <section className="presentation">
+            
+            <section className="title-about-presentation">
+          <h1 class="title-about">
+            <div class="span-container-about s1-about">
+              <span className="about-me-span">About-me</span>
+            </div>
+            <div class="span-container-about s2-about">
+              <span>About-me</span>
+            </div>
+          </h1>
+        </section>
 
-            {/* LEFT */}
-            <section className="image-presentation">
-                <div className="box-presentation"></div>
-            </section>
 
-            {/* RIGHT */}
-            <section className="text-presentation">
-                <div className="text-pres-container">
-                    <div className="text">
-                        <img src={flècheDroite} alt="flèche" />
-                        <p>Je m'appelle <strong>Yassine Boulakhrif.</strong></p>
-                    </div>
-                    <div className="text">
-                        <img src={flècheDroite} alt="flèche" />
-                        <p>Je suis <strong>développeur Front-End Junior</strong> spécialisé en React.js</p>
-                    </div>
-                    <div className="text">
-                        <img src={flècheDroite} alt="flèche" />
-                        <p>Passionné de développement web et ayant un fort attrait pour le design et l'<strong>UX/UI</strong>.</p>
-                    </div>
-                    <div className="text">
-                        <img src={flècheDroite} alt="flèche" />
-                        <p>J'ai décidé de m'y consacrer pleinement grâce à un cursus intensif d'un an.</p>
-                    </div>
+            <section className='text-about-presentation'>
+
+                <div className="first-text">
+                    <p><span className='span-first-text-1'>Bonjour! Je m'appelle Yassine, je</span></p>
+                    <p><span className='span-first-text-2'>suis développeur front-end junior </span></p>
+                    <p><span className='span-first-text-3'>situé à Paris.</span></p>
+                </div>
+
+                <div className="second-text">
+                    <p><span className='span-second-text-1'>Passionné par le motion design et l'UX/UI,</span></p>
+                    <p><span className='span-second-text-2'>j'aime créer des sites animés et vivants.</span></p>
+                    {/* <p><span>developpement web et situé à P</span></p> */}
+                </div>
+
+                <div className="third-text">
+                    <p><span className='span-third-text-1'>Je suis ouvert à l'apprentissage de</span></p>
+                    <p><span className='span-third-text-2'>nouvelles technologies et prêt à </span></p>
+                    <p><span className='span-third-text-3'>relever de nouveaux challenges.</span></p>
                 </div>
             </section>
-            
+
         </section>
     );
 };

@@ -48,6 +48,10 @@
            span {
             //    font-size: 80px;
                font-size: clamp(35px, 9vw, 80px);
+
+               a {
+                cursor: crosshair;
+                   }
            }
      }
      .time-thirdpro {
@@ -86,6 +90,7 @@
         height: 100%;
         object-fit: cover;
         filter: grayscale(1);
+        cursor: crosshair;
     }
 
 }
