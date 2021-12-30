@@ -5,75 +5,191 @@
     align-items: center;
 }
 .presentation {
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
+    // background: #ebc5c5;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 4fr 5fr;
-    grid-template-rows: 1fr;
-    background: #F8F8F8;
-    grid-template-areas: "1" "2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 6fr;
+    grid-template-areas: "1" 
+                         "2";
 }
 
+// ----- TITLE ABOUT ------- //
 
-      /****** LEFT SIDE *******/
-    .image-presentation {
-        @include midFlex();
-        grid-area: "1";
-        // background: coral;
+.title-about-presentation {
+    // background-color: cyan;
+    grid-area: "1";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: "Ogg",'Sawarabi Gothic', sans-serif;
+}
 
-            .box-presentation {
-                border: 2px solid #333;
-                width: 70%;
-                height: 70%;
-                // background: cornflowerblue;
-                // background-image: url(../../Pictures/maphoto.jpg);
-                background-size: cover;
-                background-position: bottom;
-                background-repeat: no-repeat;
-                border-radius: 30%;
-            }
-    }
+.title-about {
+    // background: darkgoldenrod;
+    position: relative;
+    height: 70%;
+    margin-left: 5%;
+
+  }
+  .title-about span {
+    // background-color: #cfa4a4;
+    // font-size: clamp(70px, 11vw, 150px);
+    font-size:clamp(50px, 9vw, 140px);
+    transition: 0.5s;
+    font-weight: 100;
+    will-change: transform;
+    display: inline-block;
+  }
+
+  .span-container-about {
+    overflow: hidden;
+  }
+
+  .s1-about span {
+    // overflow: hidden;
+    transform-origin: bottom;
+    animation: apparition 1.8s 2.5s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+  }
+
+  .s2-about span {
+    transform-origin: top;
+    transform: translateY(100%) rotateX(-90deg);
+  }
+  .s2-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
+  .title-about:hover .s1-about span {
+    transform: translateY(-100%) rotateX(-90deg);
+  }
+  .title-about:hover .s2-about span {
+    transform: translateY(0%) rotateX(0deg);
+  }
 
-     /******* RIGHT SIDE ******/
-    .text-presentation {
-        font-family: 'Poiret One', cursive;
-        grid-area: "2";
-        // background: cyan;
+
+// ----- TEXT PART ABOUT -----
+
+.text-about-presentation {
+    grid-area: "2";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:5fr 6fr 6fr ;
+    grid-template-areas: "1" 
+                         "2" 
+                         "3";
+    // background: cyan;
+    // @include midFlex();
+
+    .first-text {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        grid-area: "1";
+        font-family: "Roboto";
 
-        .text-pres-container {
-            // background: darkcyan;
-            height: 30%;
-            width: 100%;
-            display: flex;
+        font-size: clamp(20px, 2.3vw, 60px);
+        // background-color: darkgray;
 
-            .text {
-                // background: cornsilk;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                font-size: 18px;
-                width: 100%;
-                overflow: hidden;
-                font-weight: 600;
-                font-size: 18px;
+        p {
+            margin-right: 4%;
+            overflow: hidden;
+
+            .span-first-text-1 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 3.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
-            .text > p {
-                margin-left: 0.5rem;
-                overflow: hidden;
+            .span-first-text-2 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 3.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
-            .text:nth-child(2) {
-                // background: rgb(184, 172, 127);
-                display: flex;
-            }
-            .text:nth-child(3) {
-                // background: rgb(126, 125, 121);
-                display: flex;
+            .span-first-text-3 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 3.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
     }
 
+    .second-text {
+        grid-area: "2";
+        font-family: "Roboto";
+        font-size: clamp(20px, 2.3vw, 60px);
+        // background: darkkhaki;
+        @include midFlex();
+        flex-wrap: wrap;
+        flex-direction: column;
 
+        p {
+            overflow: hidden;
 
+            .span-second-text-1 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 3.9s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+            }
+            .span-second-text-2 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 4.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+            }
+        }
+    }
+    .third-text {
+        grid-area: "3";
+        font-family: "Roboto";
+        font-size: clamp(20px, 2.3vw, 60px);
+        // background: darksalmon;
+
+        p {
+            margin-left: 5%;
+            overflow: hidden;
+
+            .span-third-text-1 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 4.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+            }
+            .span-third-text-2 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 4.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+            }
+            .span-third-text-3 {
+                display: block;
+                // background: darkgoldenrod;
+                animation: apparition 1.9s 4.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+            }
+        }
+    }
+}
+
+@keyframes apparition {
+    0% {
+        transform: translate(0,110%);
+      }
+    100% {
+        transform: translate(0,0);
+      }
+}
+
+/////////// MEDIA QUERIES //////////@include
+
+@media screen and (max-width: 800px) {
+    .first-text {
+        display: flex;
+        flex-direction: column;
+        background:chartreuse;
+        font-size: 10vw;
+    }
+}

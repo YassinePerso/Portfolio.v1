@@ -21,14 +21,14 @@
     grid-area: "1";
     @include midFlex();
     font-size: clamp(10px, 7vw, 25px);
-    animation: textanimationX 1.2s 6.1s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+    animation: textanimationX 1.2s 4.8s cubic-bezier(0.77, 0, 0.175, 1) backwards;
 }
 
 .copyright-contact {
     grid-area: "2";
     @include midFlex();
     font-size: clamp(10px, 6vw, 20px);
-    animation: textanimationX 1.2s 6.4s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+    animation: textanimationX 1.2s 5s cubic-bezier(0.77, 0, 0.175, 1) backwards;
 }
 
 @keyframes footerApparition {

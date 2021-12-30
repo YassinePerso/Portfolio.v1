@@ -47,6 +47,10 @@
            span:nth-child(1) {
             //    font-size: 90px;
                font-size: clamp(40px, 10vw, 80px);
+
+               a {
+                cursor: crosshair;
+                   }
            }
      }
      .time-secondpro {
@@ -83,6 +87,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        cursor: crosshair;
     }
 }
 

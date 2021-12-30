@@ -27,10 +27,10 @@ const Projets = () => {
         <NavBar timeline={timeline}/>
         <TitleTechnos/>
         <Technos />
-        <Hprojets/>
-        <Bar/>
-        <FirstPro/>
-        <Bar/>
+        <Hprojets />
+        <Bar />
+        <FirstPro />
+        <Bar />
         <SecondPro />
         <Bar/>
         <ThirdPro />

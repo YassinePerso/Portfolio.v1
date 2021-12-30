@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import "../homepage/Title.scss";
 import { Power3 } from 'gsap';
 import gsap from "gsap";
+import avatar from "../../Pictures/avatar-portfolio-V2.png"
+import firstproject from "../../Pictures/firstproject.jpg"
+import secondproject from "../../Pictures/secondproject.jpg"
+import thirdproject from "../../Pictures/thirdproject.jpg";
+
 
 const Title = () => {
 
@@ -31,7 +36,7 @@ const Title = () => {
     },);
     // BLOCK 7
     timeline.to(blockSeventh, {
-      duration: 1.8,
+      duration: 1.9,
       x: "380",
       y: "350",
       scale: "0.3",
@@ -39,7 +44,7 @@ const Title = () => {
     }, "+=.7");
     // BLOCK 6
     timeline.to(blockSixth, {
-      duration: 1.8,
+      duration: 1.9,
       x: "460",
       y: "285",
       scale: "0.3",
@@ -47,7 +52,7 @@ const Title = () => {
     }, "-=2");
     // BLOCK 5
     timeline.to(blockFifth, {
-      duration: 1.8,
+      duration: 1.9,
       x: "520",
       y: "220",
       scale: "0.3",
@@ -55,7 +60,7 @@ const Title = () => {
     }, "-=2");
     // BLOCK 4
     timeline.to(blockFourth, {
-      duration: 1.8,
+      duration: 1.9,
       x: "570",
       y: "150",
       scale: "0.3",
@@ -63,7 +68,7 @@ const Title = () => {
     }, "-=2");
     // BLOCK 3
     timeline.to(blockThird, {
-      duration: 1.8,
+      duration: 1.9,
       x: "640",
       y: "80",
       scale: "0.3",
@@ -71,7 +76,7 @@ const Title = () => {
     }, "-=2");
     // BLOCK 2
     timeline.to(blockTwo, {
-      duration: 1.8,
+      duration: 1.9,
       x: "730",
       y: "10",
       scale: "0.3",
@@ -79,67 +84,41 @@ const Title = () => {
     }, "-=2");
     // BLOCK 1
     timeline.to(blockOne, {
-      duration: 1.8,
+      duration: 1.9,
       x: "820",
       y: "-50",
       scale: "0.3",
       ease: Power3.easeOut
     }, "-=2");
-
-    /////  LEFT SIDE ANIMATION  //////
-    // timeline.from(".left-1 > span", {
-    //   y: 200,
-    //   delay: 5,
-    // })
-    // timeline.from(".text-left-title2", {
-    //   y: 200,
-    //   delay: 5,
-    // })
-    // timeline.from(".text-left-title3", {
-    //   y: 200,
-    //   delay: 5,
-    // })
-    // timeline.from(".text-left-title4", {
-    //   y: 200,
-    //   delay: 5,
-    // })
-    ///////   -- TO --    //////
-    // timeline.to(".left-1 > span", {
-    //   y: 0,
-    //   delay: 5,
-    // })
-    // timeline.to(".text-left-title2", {
-    //   y: 0,
-    //   delay: 5,
-    // })
-    // timeline.to(".text-left-title3", {
-    //   y: 0,
-    //   delay: 5,
-    // })
-    // timeline.to(".text-left-title4", {
-    //   y: 0,
-    //   delay: 5,
-    // })
   });
+  
+
+ 
   
   
   return (
     <main className="container-title">
 
+
       {/* LEFT */}
       <section className="leftSideTitle">
         <div className="left-1">
-        <p><span class="text">FRENCH</span></p>
+        <p className="pfrench"><span class="text">FRENCH</span></p>
         </div>
         <div className="left-2">
-        <p><span class="text">& COOL,</span></p>
+        <p className="p-cool"><span class="text">& COOL,</span></p>
         </div>
         <div className="left-3">
-        <p><span class="text">FRONT</span></p>
+        <p className="p-front"><span class="text">FRONT</span></p>
         </div>
         <div className="left-4">
-        <p><span class="text">DEV-WEB</span></p>
+        <p className="p-dev"><span class="text">DEV-WEB</span></p>
         </div>
+
+        <img src={avatar} alt="jeu" className="avatar" />
+        <img src={firstproject} alt="jeu" className="firstproject" />
+        <img src={secondproject} alt="jeu" className="secondproject" />
+        <img src={thirdproject} alt="jeu" className="thirdproject" />
       </section>
 
       {/* MIDDLE */}

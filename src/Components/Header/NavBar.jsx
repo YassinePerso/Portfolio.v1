@@ -6,7 +6,6 @@ import logo from '../Pictures/logo.png'
 const Header = () => {
 
     return (
-        <header>
             <nav>
                 <div className="logo">
                     <Link to="/"><img src={logo} width="60" height="60" alt="logo" /></Link>
@@ -27,9 +26,11 @@ const Header = () => {
                         <Link to="/Contact" className="contact-item">Contact</Link>
                     </li>  
                 </section>
+                <button className="navbar__burger">
+                    <span className="burger-bar"></span>
+                </button>
 
             </nav>
-        </header>
     )
 }
 

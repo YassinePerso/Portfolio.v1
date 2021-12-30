@@ -1,29 +1,32 @@
-// import React, { useEffect, useRef } from 'react';
-// import '../Cursor/Cursor.scss'
+import React, { useContext } from "react";
+import { CursorContext } from "./CursorManager";
+import "./Cursor.scss";
 
-// const Cursor = () => {
+const Cursor = () => {
+  const secondaryCursor = React.useRef(null);
+  const { size } = useContext(CursorContext);
 
-//    const cursorRef = useRef(null)
+  React.useEffect(() => {
+    document.addEventListener("mousemove", (event) => {
+      const { clientX, clientY } = event;
 
-//    useEffect(() => {
-//        document.addEventListener('mousemove', (event) => {
-//            const { clientX, clientY } = event;
-//            const mouseX = clientX - cursorRef.current.clientWidth / 2;
-//            const mouseY = clientY - cursorRef.current.clientHeight / 2;
-//            cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-//        });
-//    }, []);
+      const mouseX = clientX;
+      const mouseY = clientY;
 
+      secondaryCursor.current.style.transform = `translate3d(${mouseX -
+        secondaryCursor.current.clientWidth / 2}px, ${mouseY -
+        secondaryCursor.current.clientHeight / 2}px, 0)`;
+    });
 
-//     return (
-//         <>
-        
-//         <div className="cursor" ref={cursorRef}>
+    return () => {};
+  }, []);
 
-//         </div>
-//         </>
-//     );
-// };
+  return (
+    <div>
+      <div className={`secondary-cursor ${size}`} ref={secondaryCursor}></div>
+    </div>
+  );
+};
 
-// export default Cursor;
+export default Cursor;
 
