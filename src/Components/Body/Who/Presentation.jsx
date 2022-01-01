@@ -44,7 +44,7 @@ aboutContainers.forEach(item => {
 
                 <div className="second-text">
                     <p><span className='span-second-text-1'>Passionné par le motion design et l'UX/UI,</span></p>
-                    <p><span className='span-second-text-2'>j'aime créer des sites animés et vivants.</span></p>
+                    <p><span className='span-second-text-2'>J'aime créer des sites animés et vivants.</span></p>
                     {/* <p><span>developpement web et situé à P</span></p> */}
                 </div>
 

@@ -1,0 +1,23 @@
+.bar-who-container {
+    background-color: burlywood;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bar-who {
+    margin-left: 5%;
+    height: 2px;
+    width: 50%;
+    background-color: #333;
+}
+
+@media screen and (max-width: 800px) {
+    .bar-who {
+        height: 2px;
+        background: #333;
+        margin-right: 25%;
+    }
+}

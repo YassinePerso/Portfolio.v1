@@ -51,6 +51,9 @@
                a {
             cursor: crosshair;
                }
+               a:hover {
+                   color: grey;
+               }
            }
 
      }
@@ -82,8 +85,7 @@
     
     &:hover {
         transform: rotateZ(-10deg) scale(1.2);
-        // box-shadow: 15px 18px 0px 3px rgb(117, 70, 38);
-        box-shadow: 1px 4px 0px 20px #686868;
+        box-shadow: 15px 18px 0px 3px rgb(0, 0, 0);
     }
 
     img {

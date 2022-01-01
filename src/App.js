@@ -6,17 +6,17 @@ import Accueil from '../src/Components/Pages/Accueil';
 import QuiSuisJe from '../src/Components/Pages/QuiSuisJe';
 import Projets from '../src/Components/Pages/Projets';
 import Contact from '../src/Components/Pages/Contact';
-// import Cursor from './Components/Cursor/Cursor';
 import Scroll from './Components/Scroll/Scroll';
+// import CustomCursor from './Components/Cursor/CustomCursor';
 
 
 function App() {
 
+
   return (
-    // <AnimationContext.Provider value={{ setCurrentBg}}>
     <div className="App">
-      {/* <Cursor /> */}
         <Scroll />
+        {/* <CustomCursor /> */}
         <Routes>
           <Route exact path="/" element={<Accueil/>}/>
           <Route path="/QuiSuisJe" element={<QuiSuisJe/>}  />
@@ -24,7 +24,6 @@ function App() {
           <Route path="/Contact" element={<Contact/>}  />
         </Routes>
     </div>
-  // </AnimationContext.Provider>
   );
 }
 

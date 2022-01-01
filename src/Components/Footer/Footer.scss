@@ -1,6 +1,6 @@
 
 
-footer {
+.yz {
     height: 9vh;
     width: 100%;
     // background-color: #f5efdf;
@@ -9,17 +9,18 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "1" "2";
-    font-family: 'Poiret One', cursive, sans-serif;
-    overflow-y:hidden;
+    font-family: 'Roboto', cursive, sans-serif;
+    overflow: hidden;
 }
 
 .footer-network {
+    overflow: hidden;
     grid-area: "1";
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(100px) rotate(70deg);
-    animation: footerApparition 1s 5.7s ease-out forwards;
+    animation: footerApparition 1s 5.2s ease-out forwards;
     // background-color: chartreuse;
 }
 .footer-network > p {
@@ -29,6 +30,7 @@ footer {
 
 .localisation {
     grid-area: "2";
+    overflow: hidden;
 }
 
 @keyframes footerApparition {

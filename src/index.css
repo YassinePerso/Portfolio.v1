@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   flex-wrap: wrap;
-  /* cursor: none; */
+  /* cursor: none !important; */
+  cursor: url("../src/Components/Pictures/avatar-portfolio-V2.png"), pointer;
 }
 
 body {

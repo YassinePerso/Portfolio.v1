@@ -13,7 +13,7 @@
     p {
         font-size: clamp(60px, 14vw, 100px);
         overflow: hidden;
-        
+        width: 80%;
       }
        
          span {
@@ -27,6 +27,9 @@
 @media screen and (max-width: 800px) {
   .container-title-technos {
     height: 60vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
