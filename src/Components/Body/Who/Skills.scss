@@ -1,38 +1,19 @@
 
-// @mixin midFlex {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+@mixin midFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-// .skills-container {
-//     height: 50vh;
-//     width: 100%;
-//     @include midFlex();
-//     // overflow: hidden;
-//     // background: #8978ce;
-//     // color: #fff;
-//     // perspective: 1000px;
-//     // text-align: center;
-
-//     h1 {
-//         width: 80%;
-//         height: 15%;
-//         background-color: yellowgreen;
-//         font-family: Playfair Display;
-//         transform-style: preserve-3d;
-//         display: inline-flex;
-//         margin-top: 200px;
-//         color: #333;
-//         font-weight: 100;
-//         letter-spacing: 10px;
-//         font-size: 100px;
-//         cursor: pointer;
-//         /* background: rgba(255, 166, 0, 0.596); */
-        
-//          span {
-//             pointer-events: none;
-//         }
-//     }
-// }
+.skills-container {
+    // height: 50vh;
+    width: 100%;
+    @include midFlex();
+    background-color: rosybrown;
+    // overflow: hidden;
+    // background: #8978ce;
+    // color: #fff;
+    // perspective: 1000px;
+    // text-align: center;
+}

@@ -41,7 +41,7 @@ const Title = () => {
       y: "350",
       scale: "0.3",
       ease: Power3.easeOut,
-    }, "+=.7");
+    }, "-=0.1");
     // BLOCK 6
     timeline.to(blockSixth, {
       duration: 1.9,
@@ -91,10 +91,17 @@ const Title = () => {
       ease: Power3.easeOut
     }, "-=2");
   });
-  
 
- 
-  
+  document.addEventListener("mousemove", parallax);
+  function parallax(e) {
+    document.querySelectorAll(".boxing").forEach(function(move) {
+      let moving_value = move.getAttribute("data-value");
+      let x = (e.clientX * moving_value) / 250;
+      let y = (e.clientY * moving_value) / 250;
+
+      move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+  }
   
   return (
     <main className="container-title">
@@ -103,16 +110,16 @@ const Title = () => {
       {/* LEFT */}
       <section className="leftSideTitle">
         <div className="left-1">
-        <p className="pfrench"><span class="text">FRENCH</span></p>
+        <p className="pfrench"><span class="text boxing" data-value="3">FRENCH</span></p>
         </div>
         <div className="left-2">
-        <p className="p-cool"><span class="text">& COOL,</span></p>
+        <p className="p-cool"><span class="text boxing" data-value="-3">& COOL,</span></p>
         </div>
         <div className="left-3">
-        <p className="p-front"><span class="text">FRONT</span></p>
+        <p className="p-front"><span class="text boxing" data-value="3">FRONT</span></p>
         </div>
         <div className="left-4">
-        <p className="p-dev"><span class="text">DEV-WEB</span></p>
+        <p className="p-dev"><span class="text boxing" data-value="-3">DEV-WEB</span></p>
         </div>
 
         <img src={avatar} alt="jeu" className="avatar" />
@@ -125,12 +132,12 @@ const Title = () => {
       <section className="middle">
         <div className="haut-middle">
           <div class="blocks">
-            <div class="block-1 block" ref={el => blockOne = el}>Y</div>
-            <div class="block-2 block" ref={el => blockTwo = el}>A</div>
+            <div class="block-1 block"  ref={el => blockOne = el}>Y</div>
+            <div class="block-2 block"  ref={el => blockTwo = el}>A</div>
             <div class="block-3 block" ref={el => blockThird = el}>S</div>
-            <div class="block-4 block" ref={el => blockFourth = el}>S</div>
+            <div class="block-4 block"  ref={el => blockFourth = el}>S</div>
             <div class="block-5 block" ref={el => blockFifth = el}>I</div>
-            <div class="block-6 block" ref={el => blockSixth = el}>N</div>
+            <div class="block-6 block"  ref={el => blockSixth = el}>N</div>
             <div class="block-7 block" ref={el => blockSeventh = el}>E</div>
           </div>
     
@@ -141,9 +148,7 @@ const Title = () => {
 
         {/* RIGHT */}
       <section className="rightSideTitle">
-        <section className="right-1">
-
-        </section>
+        <img src={avatar} className="boxing" data-value="10" alt="avatar" width={100} height={200} />
       </section>
 
     </main>

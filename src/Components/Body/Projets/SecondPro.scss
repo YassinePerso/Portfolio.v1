@@ -51,6 +51,9 @@
                a {
                 cursor: crosshair;
                    }
+                   a:hover {
+                    color: grey;
+                }
            }
      }
      .time-secondpro {
@@ -79,8 +82,8 @@
     transition: .7s;
 
     &:hover {
-        transform: rotateZ(10deg) scale(1.2);
-        box-shadow: 15px 18px 0px 3px rgb(117, 70, 38);
+        transform: rotateZ(-10deg) scale(1.2);
+        box-shadow: 15px 18px 0px 3px rgb(0, 0, 0);
     }
 
     img {

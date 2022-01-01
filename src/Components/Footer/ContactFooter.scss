@@ -9,12 +9,14 @@
 
 .contactfooter-container {
     height: 9vh;
+    background: yellowgreen;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:  "1" "2";
     font-family: 'Sawarabi Gothic', sans-serif;
+    overflow: hidden;
 }
 
 .portfolio-version-contact {

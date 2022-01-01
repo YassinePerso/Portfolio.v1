@@ -106,17 +106,17 @@
             .span-first-text-1 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 3.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 3.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-first-text-2 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 3.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 3.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-first-text-3 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 3.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 3.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
     }
@@ -136,12 +136,12 @@
             .span-second-text-1 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 3.9s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 3.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-second-text-2 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 4.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 3.9s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
     }
@@ -158,17 +158,17 @@
             .span-third-text-1 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 4.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 4.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-third-text-2 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 4.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 4.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-third-text-3 {
                 display: block;
                 // background: darkgoldenrod;
-                animation: apparition 1.9s 4.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
+                animation: apparition 1.9s 4.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
     }
@@ -176,7 +176,7 @@
 
 @keyframes apparition {
     0% {
-        transform: translate(0,110%);
+        transform: translate(0,130%);
       }
     100% {
         transform: translate(0,0);

@@ -58,6 +58,8 @@ nav {
   animation: headerApparition 0.7s 4.3s ease-out forwards;
   transform: translateY(150px) rotate(70deg);
 }
+.links > .nav-item:nth-child(4) {display: none;
+}
 
 /****** CONTACT LINK ******/
 
@@ -146,7 +148,6 @@ nav {
     font-weight: bold;
   }
 
-
   .nav-item > a {
     letter-spacing: 0.1rem;
     text-decoration: none;
@@ -161,5 +162,43 @@ nav {
     }
   }
 
-
   ///////////////   MEDIA QUERIES -- HEADER /////////////
+
+  @media screen and (max-width: 800px) {
+    nav {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      display: flex;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .nav-item:nth-child(2) {
+        margin-left: 1.5rem;
+
+      }
+      .nav-item:nth-child(3) {
+        margin-left: 1.5rem;
+      }
+      .nav-item:nth-child(4) {
+        display:block;
+        margin-left: 1.5rem;
+
+      }
+      
+      .nav-item > a {
+        font-size: 3.5vw;
+        letter-spacing: 1px;
+      }
+    }
+    //// DISPLAY NONE ////
+    .contact-link {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+  }

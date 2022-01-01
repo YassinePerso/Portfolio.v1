@@ -2,9 +2,9 @@ import React from 'react';
 import NavBar from '../Header/NavBar'
 import gsap from 'gsap';
 import Presentation from '../Body/Who/Presentation';
-// import Skills from '../Body/Who/Skills';
 import TransitionWho from '../Body/Transition/TransitionWho';
 import Marquee from '../Body/Who/Marquee';
+import CV from '../Body/Who/CV';
 import ContactFooter from '../Footer/ContactFooter'
 
 const QuiSuisJe = () => {
@@ -18,7 +18,7 @@ const QuiSuisJe = () => {
             <NavBar timeline={timeline} />
             <Presentation timeline={timeline} />
             <Marquee />
-            {/* <Skills /> */}
+            <CV />
             <ContactFooter />
         </>
     )

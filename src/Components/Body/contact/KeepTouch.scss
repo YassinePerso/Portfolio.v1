@@ -13,6 +13,7 @@
 }
 
 .container-keeptouch {
+  overflow: hidden;
     width: 100%;
     height: 82vh;
     background: #F8F8F8;
@@ -39,7 +40,7 @@
   }
   .title span {
     // background-color: #cfa4a4;
-    font-size: clamp(70px, 11vw, 150px);
+    font-size: clamp(60px, 11vw, 150px);
     transition: 0.5s;
     font-weight: 100;
     will-change: transform;
