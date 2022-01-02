@@ -3,9 +3,7 @@
     justify-content: center;
     align-items: center;
 }
-
 .H1projets {
-  // background-color: #853c3c;
   background-color: #F8F8F8;
   font-family: "Ogg",'Sawarabi Gothic', sans-serif;
     display: flex;
@@ -19,14 +17,10 @@
         margin: 0;
         text-align: center;
         font-size: clamp(55px, 10vw, 140px);
-        // overflow: hidden;
       }
-      
        span {
          color: #333;
-        //  color: #F8F8F8;
         display: block;
-       
       }
 }
 
@@ -38,7 +32,6 @@
     transform: rotate(360deg);
   }
 }
-
 @media screen and (max-width:800px) {
   .H1projets {
     height: 50vh;

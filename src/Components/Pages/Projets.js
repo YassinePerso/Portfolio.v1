@@ -15,16 +15,12 @@ import ContactFooter from '../Footer/ContactFooter';
 import gsap from 'gsap';
 
 
-
 const Projets = () => {
 
     let timeline = gsap.timeline();
 
-
-    
     return (
         <section className='container-projets-page'>
-            
   
         <TransitionProjets timeline={timeline} />
         <NavBar timeline={timeline}/>
