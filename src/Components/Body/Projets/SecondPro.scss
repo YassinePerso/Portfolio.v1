@@ -8,9 +8,7 @@
     justify-content: center;
     align-items: center;
 }
-
 .secondpro-container {
-    // background: cadetblue;
     height: 45vh;
     width: 100%;
     display: flex;
@@ -18,10 +16,8 @@
     align-items: center;
     font-family: 'Sawarabi Gothic', sans-serif;
 }
-
 .grid-secondpro {
     margin-right: 5%;
-    // background: chartreuse;
     width: 65%;
     height: 100%;
     display: grid;
@@ -29,15 +25,12 @@
     grid-template-rows: 1fr;
     grid-template-areas: "1" "2";
 }
-
 .name-project-secondpro {
     grid-area: "1";
-    // background: chocolate;
     display: flex;
     flex-direction: column;
 
      .title-secondpro {
-        //  background: rgb(135, 111, 138);
          width: 100%;
          height: 70%;
          display: flex;
@@ -45,7 +38,6 @@
          flex-direction: column;
 
            span:nth-child(1) {
-            //    font-size: 90px;
                font-size: clamp(40px, 10vw, 80px);
 
                a {
@@ -57,7 +49,6 @@
            }
      }
      .time-secondpro {
-        //  background: darkgrey;
          width: 100%;
          height: 30%;
          display: flex;
@@ -67,9 +58,7 @@
          .bold-span {
             font-weight: bold;
         }
-
           span {
-            //   font-size: 20px;
             font-size: clamp(10px, 5vw, 25px);
           }
      }
@@ -79,10 +68,9 @@
     grid-area: "2";
     background: #333;
     overflow: hidden;
-    transition: .7s;
+    transition: .4s;
 
     &:hover {
-        transform: rotateZ(-10deg) scale(1.2);
         box-shadow: 15px 18px 0px 3px rgb(0, 0, 0);
     }
 
@@ -95,7 +83,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
     .secondpro-container {
         @include midFlex();
     }

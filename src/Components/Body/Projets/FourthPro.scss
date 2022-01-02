@@ -1,16 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 @mixin midFlex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .fourthpro-container {
-    // background: cadetblue;
     height: 45vh;
     width: 100%;
     display: flex;
@@ -18,10 +11,8 @@
     align-items: center;
     font-family: 'Sawarabi Gothic', sans-serif;
 }
-
 .grid-fourthpro {
     margin-right: 5%;
-    // background: chartreuse;
     width: 65%;
     height: 100%;
     @include midFlex();

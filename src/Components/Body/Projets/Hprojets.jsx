@@ -1,10 +1,10 @@
 import React from 'react';
 import'../Projets/Hprojets.scss';
 import flècheBasDroite from '../../Pictures/flèche-bas-droite.png';
+import Fade from "react-reveal/Slide";
 
 
 const Hprojets = ({timeline}) => {
-
 
     document.addEventListener("mousemove", parallax);
 function parallax(e) {
@@ -26,17 +26,15 @@ document.querySelectorAll(".arrow").forEach(function(move) {
   move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
 });
 }
-
-    return (        
+    return (   
+        <Fade right duration={1000} delay={100}>   
         <section className="H1projets">
-            
             <p>
                 <span data-value="13" className='span-mes-projets'>Mes Projets</span>
             </p>
             <img src={flècheBasDroite} className='arrow' data-value="20" alt="arrow" width={110} />
         </section>
-       
+        </Fade>  
     );
 };
-
 export default Hprojets;

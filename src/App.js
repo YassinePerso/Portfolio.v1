@@ -1,4 +1,5 @@
 import React from 'react';
+import '../src/App.css';
 import '../src/_settings.scss';
 
 import { Route, Routes } from 'react-router-dom';
@@ -7,16 +8,15 @@ import QuiSuisJe from '../src/Components/Pages/QuiSuisJe';
 import Projets from '../src/Components/Pages/Projets';
 import Contact from '../src/Components/Pages/Contact';
 import Scroll from './Components/Scroll/Scroll';
-// import CustomCursor from './Components/Cursor/CustomCursor';
 
 
 function App() {
 
-
   return (
     <div className="App">
+
+
         <Scroll />
-        {/* <CustomCursor /> */}
         <Routes>
           <Route exact path="/" element={<Accueil/>}/>
           <Route path="/QuiSuisJe" element={<QuiSuisJe/>}  />

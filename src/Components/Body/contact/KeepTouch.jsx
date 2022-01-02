@@ -3,12 +3,8 @@ import "../../Body/contact/KeepTouch.scss";
 
 const KeepTouch = ({timeline}) => {
 
-
-  
   
   useEffect(() => {
-
-
     //  -----  Contactez-moi ! ----- //
     const spanContainers = document.querySelectorAll('.title div');
 
@@ -22,12 +18,10 @@ spanContainers.forEach(item => {
     })
 })
   })
-
-
   return (
     <>
       <div class="container-keeptouch">
-        
+
         <section className="contactez-moi">
           <h1 class="title">
             <div class="span-container s1">
@@ -38,7 +32,6 @@ spanContainers.forEach(item => {
             </div>
           </h1>
         </section>
-
         
         <section className="links-contact">
           <div className="container-grid-links-contact">
@@ -74,7 +67,6 @@ spanContainers.forEach(item => {
             </div>
             </div>
         </section>
-
 
       </div>
     </>

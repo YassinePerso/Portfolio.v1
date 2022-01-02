@@ -5,13 +5,11 @@
     flex-wrap: wrap;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .container-keeptouch {
   overflow: hidden;
     width: 100%;
@@ -20,43 +18,33 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 6fr 4fr;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr;
     grid-template-areas: "1" "2";
     font-family: "Ogg",'Sawarabi Gothic', sans-serif;
 }
-
 .contactez-moi {
-    // background-color: beige;
     grid-area: "1";
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .title {
     position: relative;
   }
   .title span {
-    // background-color: #cfa4a4;
     font-size: clamp(60px, 11vw, 150px);
     transition: 0.5s;
     font-weight: 100;
     will-change: transform;
     display: inline-block;
   }
-
   .span-container {
     overflow: hidden;
   }
-
   .s1 span {
-    // overflow: hidden;
     transform-origin: bottom;
     animation: stalkMeApparition 1.5s 2.5s cubic-bezier(0.77, 0, 0.175, 1) backwards;
   }
-
   .s2 span {
     transform-origin: top;
     transform: translateY(100%) rotateX(-90deg);
@@ -66,7 +54,6 @@
     top: 0;
     left: 0;
   }
-  
   .title:hover .s1 span {
     transform: translateY(-100%) rotateX(-90deg);
   }
@@ -74,11 +61,8 @@
     transform: translateY(0%) rotateX(0deg);
   }
 
-  
   //////////////   Links CONTACT   //////////////
-  
   .links-contact {
-      // background: cadetblue;
       grid-area: "2";
       display: flex;
       flex-direction: column;
@@ -89,16 +73,13 @@
 
       .container-grid-links-contact {
         width: 100%;
-        // background: #cfa4a4;
         height: 100%;
         display: flex;
-        // flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
       }
   }  
   ///////// --------- GITHUB link ----------- //////
-
   .container-contact-links-github {
     position: relative;
   }
@@ -124,7 +105,6 @@
     top: 0;
     left: 0;
   }
-  
   .container-contact-links-github:hover .g1 span {
     transform: translateY(-100%) rotateX(-90deg);
   }
@@ -132,9 +112,7 @@
     transform: translateY(0%) rotateX(0deg);
   }
 
-
   ///////// -------- LINKEDIN link ---------- //////
-
   .container-contact-links-linkedin {
     position: relative;
   }
@@ -146,7 +124,6 @@
     will-change: transform;
     display: inline-block;
   }
-  
   .l1 span {
     transform-origin: bottom;
     animation: linksApparition 1.3s 3.8s cubic-bezier(0.77, 0, 0.175, 1) backwards;
@@ -160,7 +137,6 @@
     top: 0;
     left: 0;
   }
-  
   .container-contact-links-linkedin:hover .l1 span {
     transform: translateY(-100%) rotateX(-90deg);
   }
@@ -168,9 +144,7 @@
     transform: translateY(0%) rotateX(0deg);
   }
   
-
   ///////// -------- GMAIL link ---------- //////
-
   .container-contact-links-gmail {
     position: relative;
   }
@@ -182,7 +156,6 @@
     will-change: transform;
     display: inline-block;
   }
-  
   .gm1 span {
     transform-origin: bottom;
     animation: linksApparition 1.3s 4.5s cubic-bezier(0.77, 0, 0.175, 1) backwards;
@@ -196,22 +169,18 @@
     top: 0;
     left: 0;
   }
-  
   .container-contact-links-gmail:hover .gm1 span {
     transform: translateY(-100%) rotateX(-90deg);
   }
   .container-contact-links-gmail:hover .gm2 span {
     transform: translateY(0%) rotateX(0deg);
   }
-
   a {
       color: #333;
       text-decoration: none;
   }
 
-
   ////// -------  BAR  ------- /////
-  
   .bar-contact1 {
       background: #333;
       height: 50%;
@@ -226,23 +195,16 @@
   }
 
   ///////////////////  ------  MEDIA QUERIES ------   ///////////////
-
   @media screen and (max-width: 800px) {
       .container-keeptouch {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5fr 6fr;
       }
-
-      // .links-contact {
-      //   @include midFlex();
-      //   flex-direction: column;
-      // }
       .container-grid-links-contact {
         @include midFlex();
         flex-direction: column;
       }
-
       .bar-contact1 {
         background: #333;
         height: 2px;
@@ -255,7 +217,6 @@
     }
   }
 
-  
   @keyframes stalkMeApparition {
     from {
       transform: translateX(900px);
@@ -264,7 +225,6 @@
       transform: none;
     }
   }
-
   @keyframes linksApparition {
     from {
       transform: translateY(300px) rotate(75deg);
@@ -273,10 +233,3 @@
       transform: none;
     }
   }
-
-  // @keyframes barApparition {
-  //   from {
-  //     height: 0%;
-  //     width: 0px;
-  //   }
-  // }

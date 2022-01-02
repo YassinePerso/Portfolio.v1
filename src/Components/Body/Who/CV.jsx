@@ -20,20 +20,8 @@ cvContainers.forEach(item => {
 
   return (
     <section className="cv-container">
-
-
-      <div className="title-cv-container">
-        <h2 class="title-cv">
-          <div class="span-container-cv s1-cv">
-            <span className="about-me-span">Mon CV :</span>
-          </div>
-          <div class="span-container-cv s2-cv">
-            <span>Mon CV :</span>
-          </div>
-        </h2>
-      </div>
-
-      <div className="cv-link-container"></div>
+      <span>Téléchargez mon :</span>
+      <button>CV</button>
     </section>
   );
 };
