@@ -41,7 +41,7 @@ const Title = () => {
       y: "350",
       scale: "0.3",
       ease: Power3.easeOut,
-    }, "-=0.1");
+    }, "+=0.2");
     // BLOCK 6
     timeline.to(blockSixth, {
       duration: 1.9,
