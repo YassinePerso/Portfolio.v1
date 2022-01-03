@@ -7,13 +7,9 @@
 }
 
 /******** PARAMS *********/
-
 .navbar__burger {
   display: none;
 }
-
-
-
 nav {
   display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -25,7 +21,6 @@ nav {
 }
 
 /*** LOGO ***/
-
 .logo {
   grid-area: "1";
   width: 100%;
@@ -36,7 +31,6 @@ nav {
 
 
 /*** </li> ***/
-
 .links {
   font-family: 'Roboto', sans-serif;
     height: 100%;
@@ -62,7 +56,6 @@ nav {
 }
 
 /****** CONTACT LINK ******/
-
 .contact-link {
   font-family: 'Roboto', sans-serif;
   grid-area: "3";
@@ -98,9 +91,7 @@ nav {
   height: 100%;
 }
 
-
               /************ <li> PARAMS </li> **********/
-
 .nav-item {
     text-align: none;
     font-size: 15px;
@@ -194,7 +185,6 @@ nav {
         letter-spacing: 1px;
       }
     }
-    //// DISPLAY NONE ////
     .contact-link {
       display: none;
     }

@@ -44,12 +44,6 @@ const Stack = () => {
                     <Zoom delay={450}>
                     <span>- UiKIT</span>
                     </Zoom>
-                    {/* <Zoom delay={500}>
-                    <span>- Responsive</span>
-                    </Zoom>
-                    <Zoom delay={550}>
-                    <span>- SEO</span>
-                    </Zoom> */}
                 </div>
             </div>
                     {/* BAR-MIDDLE */}
