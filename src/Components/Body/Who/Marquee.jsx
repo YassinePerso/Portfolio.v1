@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Who/Marquee.scss';
-import { Zoom } from 'react-reveal';
 import Fade from "react-reveal/Fade";
 
 
