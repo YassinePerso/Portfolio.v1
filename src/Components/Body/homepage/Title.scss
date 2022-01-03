@@ -43,11 +43,11 @@ align-items: flex-start;
   position: absolute;
   overflow: hidden;
   left: 15%;
-  height: 22%;
+  height: 26%;
   width: 60%;
 
   span {
-    font-size: clamp(20px, 10vw, 150px);
+    font-size: clamp(20px, 9vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }
@@ -79,7 +79,7 @@ p {
 
   span {
     margin-left: 5%;
-    font-size: clamp(20px, 10vw, 150px);
+    font-size: clamp(20px, 9vw, 150px);
     transition: transform 100ms ease;
   }
  }
@@ -100,11 +100,11 @@ p {
   position: absolute;
   overflow: hidden;
   left: 18%;
-  height: 22%;
+  height: 26%;
   width: 70%;
 
   span {
-    font-size: clamp(20px, 10vw, 150px);
+    font-size: clamp(20px, 9vw, 150px);
     margin-left: 10%;
     transition: transform 100ms ease;
   }
@@ -130,7 +130,7 @@ p {
   height: 26%;
   
   span {
-    font-size: clamp(30px, 10vw, 150px);
+    font-size: clamp(30px, 9vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }
