@@ -1,0 +1,12 @@
+.quote-who {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ogg",'Sawarabi Gothic', sans-serif;
+
+    span {
+        font-size: clamp(20px, 5vw, 50px);
+    }
+}

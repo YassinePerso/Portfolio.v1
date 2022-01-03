@@ -7,7 +7,6 @@
 .presentation {
     height: 102vh;
     width: 100%;
-    // background: #ebc5c5;
     font-family: 'Sawarabi Gothic', sans-serif;
     overflow: hidden;
     display: grid;
@@ -18,9 +17,7 @@
 }
 
 // ----- TITLE ABOUT ------- //
-
 .title-about-presentation {
-    // background-color: cyan;
     grid-area: "1";
     display: flex;
     flex-direction: column;
@@ -28,17 +25,12 @@
     align-items: flex-start;
     font-family: "Ogg",'Sawarabi Gothic', sans-serif;
 }
-
 .title-about {
-    // background: darkgoldenrod;
     position: relative;
     height: 70%;
     margin-left: 5%;
-
   }
   .title-about span {
-    // background-color: #cfa4a4;
-    // font-size: clamp(70px, 11vw, 150px);
     font-size:clamp(50px, 9vw, 140px);
     transition: 0.5s;
     font-weight: 100;
@@ -84,8 +76,6 @@
     grid-template-areas: "1" 
                          "2" 
                          "3";
-    // background: cyan;
-    // @include midFlex();
 
     .first-text {
         display: flex;
@@ -97,7 +87,6 @@
         font-family: "Roboto";
 
         font-size: clamp(20px, 2.3vw, 60px);
-        // background-color: darkgray;
 
         p {
             margin-right: 4%;
@@ -105,17 +94,14 @@
 
             .span-first-text-1 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 3.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-first-text-2 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 3.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-first-text-3 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 3.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
@@ -125,7 +111,6 @@
         grid-area: "2";
         font-family: "Roboto";
         font-size: clamp(20px, 2.3vw, 60px);
-        // background: darkkhaki;
         @include midFlex();
         flex-wrap: wrap;
         flex-direction: column;
@@ -135,12 +120,10 @@
 
             .span-second-text-1 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 3.7s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-second-text-2 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 3.9s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
@@ -149,7 +132,6 @@
         grid-area: "3";
         font-family: "Roboto";
         font-size: clamp(20px, 2.3vw, 60px);
-        // background: darksalmon;
 
         p {
             margin-left: 5%;
@@ -157,23 +139,19 @@
 
             .span-third-text-1 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 4.1s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-third-text-2 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 4.3s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
             .span-third-text-3 {
                 display: block;
-                // background: darkgoldenrod;
                 animation: apparition 1.9s 4.5s cubic-bezier(0.77, 0, 0.220, 1) backwards;
             }
         }
     }
 }
-
 @keyframes apparition {
     0% {
         transform: translate(0,130%);
@@ -182,14 +160,11 @@
         transform: translate(0,0);
       }
 }
-
 /////////// MEDIA QUERIES //////////@include
-
 @media screen and (max-width: 800px) {
     .first-text {
         display: flex;
         flex-direction: column;
-        background:chartreuse;
         font-size: 10vw;
     }
 }

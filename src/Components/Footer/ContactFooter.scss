@@ -5,11 +5,8 @@
     justify-content: center;
     align-items: center;
 }
-
-
 .contactfooter-container {
     height: 9vh;
-    background: yellowgreen;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,21 +15,18 @@
     font-family: 'Sawarabi Gothic', sans-serif;
     overflow: hidden;
 }
-
 .portfolio-version-contact {
     grid-area: "1";
     @include midFlex();
     font-size: clamp(10px, 7vw, 25px);
     animation: textanimationX 1.2s 4.8s cubic-bezier(0.77, 0, 0.175, 1) backwards;
 }
-
 .copyright-contact {
     grid-area: "2";
     @include midFlex();
     font-size: clamp(10px, 6vw, 20px);
     animation: textanimationX 1.2s 5s cubic-bezier(0.77, 0, 0.175, 1) backwards;
 }
-
 @keyframes footerApparition {
     from {
         transform: translateY(200px) rotate(30deg);

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Projets/ThirdPro.scss'
 import thirdproject from '../../Pictures/thirdproject.jpg';
-import Fade from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import { Zoom } from "react-reveal";
 
 const ThirdPro = () => {
