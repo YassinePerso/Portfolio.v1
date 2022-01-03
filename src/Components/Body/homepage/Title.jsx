@@ -110,16 +110,16 @@ const Title = () => {
       {/* LEFT */}
       <section className="leftSideTitle">
         <div className="left-1">
-        <p className="pfrench"><span class="text boxing" data-value="3">FRENCH</span></p>
+        <p className="pfrench"><span class="text boxing" data-value="4">FRENCH</span></p>
         </div>
         <div className="left-2">
-        <p className="p-cool"><span class="text boxing" data-value="-3">& COOL,</span></p>
+        <p className="p-cool"><span class="text boxing" data-value="-4">& COOL,</span></p>
         </div>
         <div className="left-3">
-        <p className="p-front"><span class="text boxing" data-value="3">FRONT</span></p>
+        <p className="p-front"><span class="text boxing" data-value="4">FRONT</span></p>
         </div>
         <div className="left-4">
-        <p className="p-dev"><span class="text boxing" data-value="-3">DEV-WEB</span></p>
+        <p className="p-dev"><span class="text boxing" data-value="-4">DEV-WEB</span></p>
         </div>
 
         <img src={avatar} alt="jeu" className="avatar" />
