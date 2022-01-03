@@ -83,7 +83,7 @@ const Stack = () => {
                   {/********************* TOOLS CONTAINER **********************/}
             <section className="container-tools">
             <div className="title-tools-t">
-            <Zoom delay={400} duration={1000}>
+            <Zoom delay={400} duration={1100}>
                     <span>Outils :</span>
             </Zoom>
             </div>

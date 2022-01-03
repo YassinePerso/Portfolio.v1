@@ -3,18 +3,13 @@
     height: 45vh;
     width: 100%;
     background-color: #F8F8F8;
-    // background-color: #853c3c;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    // transform: rotateZ(10deg);
 }
 
 .marquee {
-    // justify-content: center;
-    // display: flex;
-    // align-items: center;
     font-size: 100px;
     line-height: 1;
     font-family: "Ogg",'Sawarabi Gothic', sans-serif;
@@ -34,5 +29,10 @@
      }
      100% {
          transform: translateX(-50%);
+     }
+ }
+ @media screen and (max-width:800px) {
+     .marquee {
+         font-size: 90px;
      }
  }
