@@ -212,9 +212,6 @@ p {
     p {
       width: 75%;
       @include midFlex(); 
-
-      span {
-      }
     }
   }
   .left-2 {
@@ -269,6 +266,8 @@ p {
 }}
 @media screen and (max-width: 800px) {
   .container-title {
-    height: 79vh;
+    height: 77vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }

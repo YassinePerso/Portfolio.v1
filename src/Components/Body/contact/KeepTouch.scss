@@ -217,7 +217,9 @@
   }
   @media screen and (max-width: 800px) {
     .container-keeptouch {
-      height: 79vh;
+      height: 77vh;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
   }
   @keyframes stalkMeApparition {
