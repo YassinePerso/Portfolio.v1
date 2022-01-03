@@ -215,7 +215,11 @@
         width: 50%;
     }
   }
-
+  @media screen and (max-width: 800px) {
+    .container-keeptouch {
+      height: 79vh;
+    }
+  }
   @keyframes stalkMeApparition {
     from {
       transform: translateX(900px);

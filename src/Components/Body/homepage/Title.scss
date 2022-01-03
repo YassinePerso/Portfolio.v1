@@ -47,7 +47,7 @@ align-items: flex-start;
   width: 60%;
 
   span {
-    font-size: clamp(20px, 9vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }
@@ -79,7 +79,7 @@ p {
 
   span {
     margin-left: 5%;
-    font-size: clamp(20px, 9vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     transition: transform 100ms ease;
   }
  }
@@ -104,7 +104,7 @@ p {
   width: 70%;
 
   span {
-    font-size: clamp(20px, 9vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     margin-left: 10%;
     transition: transform 100ms ease;
   }
@@ -130,7 +130,7 @@ p {
   height: 26%;
   
   span {
-    font-size: clamp(30px, 9vw, 150px);
+    font-size: clamp(30px, 10vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }
@@ -202,25 +202,63 @@ p {
 //////////   --- MEDIA QUERIES --- /////////
 @media screen and (max-width: 850px) {
 .container-title {
-  // background: indianred;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   @include midFlex();
   overflow: hidden;
 
+  .left-1 {
+    p {
+      width: 75%;
+      @include midFlex(); 
+
+      span {
+      }
+    }
+  }
+  .left-2 {
+    @include midFlex();
+    p {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+
+    }
+  }
+  .left-3 {
+    @include midFlex();
+    p {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+
+      span {
+        margin-right: 10%;
+      }
+    }
+  }
   .left-4 {
     @include midFlex();
+    p {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; 
+
+      span {
+        width: 100%;
+        margin-right: 10%;
+      }
+    }
   }
-  p {
-    @include midFlex();
-    width: 65%;
-    // background-color: hotpink;
-  }
+
   .text {
     font-size: clamp(55px, 10vw, 100px);
   }
-}
+// }
 /// --- DISPLAY NONE --- ///
 .middle {
   display: none;
@@ -228,4 +266,9 @@ p {
 .rightSideTitle {
   display: none;
 }
+}}
+@media screen and (max-width: 800px) {
+  .container-title {
+    height: 79vh;
+  }
 }
