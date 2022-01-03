@@ -9,7 +9,7 @@ const ContactFooter = () => {
                 <p><span>Portfolio.v1</span></p>
             </div>
             <div className="copyright-contact">
-                <p><span>@2021</span></p>
+                <p><span>@2022</span></p>
             </div>
         </section>
         </>

@@ -4,8 +4,10 @@ import gsap from 'gsap';
 import Presentation from '../Body/Who/Presentation';
 import TransitionWho from '../Body/Transition/TransitionWho';
 import Marquee from '../Body/Who/Marquee';
-import CV from '../Body/Who/CV';
 import ContactFooter from '../Footer/ContactFooter'
+import BarWho from '../Body/Who/BarWho'
+import Quote from '../Body/Who/Quote';
+import Stack from '../Body/Who/Stack';
 
 const QuiSuisJe = () => {
 
@@ -17,8 +19,11 @@ const QuiSuisJe = () => {
             <TransitionWho timeline={timeline} />
             <NavBar timeline={timeline} />
             <Presentation timeline={timeline} />
+            <BarWho />
+            <Quote />
+            <BarWho />
             <Marquee />
-            <CV />
+            <Stack />
             <ContactFooter />
         </>
     )
