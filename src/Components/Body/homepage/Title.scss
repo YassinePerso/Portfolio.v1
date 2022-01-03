@@ -47,7 +47,7 @@ align-items: flex-start;
   width: 60%;
 
   span {
-    font-size: clamp(20px, 11vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }
@@ -79,7 +79,7 @@ p {
 
   span {
     margin-left: 5%;
-    font-size: clamp(20px, 11vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     transition: transform 100ms ease;
   }
  }
@@ -104,7 +104,7 @@ p {
   width: 70%;
 
   span {
-    font-size: clamp(20px, 11vw, 150px);
+    font-size: clamp(20px, 10vw, 150px);
     margin-left: 10%;
     transition: transform 100ms ease;
   }
@@ -130,7 +130,7 @@ p {
   height: 26%;
   
   span {
-    font-size: clamp(30px, 11vw, 150px);
+    font-size: clamp(30px, 10vw, 150px);
     margin-left: 5%;
     transition: transform 100ms ease;
   }

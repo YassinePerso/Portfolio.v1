@@ -1,6 +1,5 @@
 import React from 'react';
 import '../src/App.css';
-import '../src/_settings.scss';
 
 import { Route, Routes } from 'react-router-dom';
 import Accueil from '../src/Components/Pages/Accueil';

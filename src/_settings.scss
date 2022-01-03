@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body {
     width: 100%;
     height: 100vh;
     background-color: #F8F8F8;
     overflow-x: hidden;
-    
 }
-
 @mixin midFlex {
     display: flex;
     justify-content: center;

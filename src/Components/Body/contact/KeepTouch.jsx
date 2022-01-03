@@ -5,7 +5,6 @@ const KeepTouch = ({timeline}) => {
 
   
   useEffect(() => {
-    //  -----  Contactez-moi ! ----- //
     const spanContainers = document.querySelectorAll('.title div');
 
 spanContainers.forEach(item => {
@@ -48,10 +47,10 @@ spanContainers.forEach(item => {
 
             <div className="container-contact-links-linkedin">
               <div class="span-container l1">
-                <span><a href="https://www.linkedin.com/in/yassine-boulakhrif-2a8837221/">- LINKEDIN -</a></span>
+                <span><a href="https://www.linkedin.com/in/yassine-boulakhrif-2a8837221">- LINKEDIN -</a></span>
               </div>
               <div class="span-container l2">
-                <span><a href="https://www.linkedin.com/in/yassine-boulakhrif-2a8837221/">- LINKEDIN -</a></span>
+                <span><a href="https://www.linkedin.com/in/yassine-boulakhrif-2a8837221">- LINKEDIN -</a></span>
               </div>
             </div>
 
@@ -59,10 +58,10 @@ spanContainers.forEach(item => {
 
             <div className="container-contact-links-gmail">
               <div class="span-container gm1">
-                <span><a href="https://mail.google.com/">- GMAIL -</a></span>
+                <span><a href="https://mail.google.com/mail/u/0/#inbox">- GMAIL -</a></span>
               </div>
               <div class="span-container gm2">
-                <span><a href="https://mail.google.com/">- GMAIL -</a></span>
+                <span><a href="https://mail.google.com/mail/u/0/#inbox">- GMAIL -</a></span>
               </div>
             </div>
             </div>
