@@ -13,8 +13,6 @@ function App() {
 
   return (
     <div className="App">
-
-
         <Scroll />
         <Routes>
           <Route exact path="/" element={<Accueil/>}/>
@@ -22,6 +20,7 @@ function App() {
           <Route path="/Projets" element={<Projets/>}  />
           <Route path="/Contact" element={<Contact/>}  />
         </Routes>
+        
     </div>
   );
 }

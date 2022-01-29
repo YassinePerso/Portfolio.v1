@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Projets/FirstPro.scss'
-import firstproject from '../../Pictures/firstproject.jpg';
+import first from '../../Pictures/firstproject.jpg';
 import { Zoom } from "react-reveal";
 import Fade from "react-reveal/Slide";
 
@@ -29,7 +29,7 @@ const FirstPro = () => {
                 <Zoom delay={200} duration={1000}>
                 <aside className='image-project-firstpro'>
                     <a href="https://github.com/YassinePerso/DOMvillage">
-                     <img src={firstproject} alt="village" />
+                     <img src={first} alt="village" />
                     </a>
                 </aside>
                 </Zoom>
