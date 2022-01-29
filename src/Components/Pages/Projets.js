@@ -13,6 +13,7 @@ import Technos from '../Body/Projets/Technos';
 import TitleTechnos from '../Body/Projets/TitleTechnos';
 import ContactFooter from '../Footer/ContactFooter';
 import gsap from 'gsap';
+import FifthPro from '../Body/Projets/FifthPro';
 
 
 const Projets = () => {
@@ -36,6 +37,8 @@ const Projets = () => {
         <Bar />
         <FourthPro />
         <Bar/>
+        <FifthPro />
+        <Bar />
         <ContactFooter />
         </section>
     )
