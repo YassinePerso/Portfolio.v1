@@ -58,10 +58,10 @@ spanContainers.forEach(item => {
 
             <div className="container-contact-links-gmail">
               <div class="span-container gm1">
-                <span><a href="https://mail.google.com/mail/u/0/#inbox">- GMAIL -</a></span>
+                <span><a href="mailto:yassineboulakhrif75@gmail.com">- GMAIL -</a></span>
               </div>
               <div class="span-container gm2">
-                <span><a href="https://mail.google.com/mail/u/0/#inbox">- GMAIL -</a></span>
+                <span><a href="mailto:yassineboulakhrif75@gmail.com">- GMAIL -</a></span>
               </div>
             </div>
             </div>
